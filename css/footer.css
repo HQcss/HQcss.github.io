@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bg {
+    background-color: #d3b4af !important;
+    z-index: 999;
+}
+
+footer {
+    color: #888;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+    padding-top: 72px;
+    padding-bottom: 50px;
+}
+
+.h3-setting {
+    /* color: #d2cfd4; */
+    color: #fdfaff;
+    font-size: 20px;
+}
+
+.h3-setting-2 {
+    color: #8e9094;
+    font-size: 16px;
+}
+
+.text {
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "Source Serif Pro", serif;
+    margin-bottom: 25px;
+}
+
+.text-highlight {
+    color: white;
+    font-size: 16px;
+}
+
+.form {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    height: 54px;
+    border-radius: 30px;
+    background-color: #292b31;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: #292b31;
+    border: none;
+    box-shadow: none;
+    color: white;
+    /* font-size: 14px; */
+}
+
+.btn-setting {
+    background-color: #f88020;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    height: 46px;
+    padding: 0px 30px;
+    border-radius: 30px;
+}
+
+.icon-color {
+    /* color: #72675f; */
+    color: #f5b442;
+    font-size: 20px;
+    margin-right: 5px;
+    width: 20px;
+}
+
+.img-setting {
+    margin-bottom: 30px;
+}
+
+.col-setting {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ul-footer-top>li {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.ul-footer-top a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* footer bottom */
+
+.footer-bottom {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* border-top: 1px solid #bbbbbb85; */
+    background-color: #ffffff;
+}
+
+.ul-footer-bottom {
+    display: inline;
+}
+
+.ul-footer-bottom>li {
+    float: left;
+    list-style: none;
+}
+
+.ul-footer-bottom>li a {
+    text-decoration: none;
+    color: rgb(29, 27, 27);
+    font-weight: 500;
+    padding: 0px 10px 5px 0px;
+    font-size: 14px;
+}
+
+.ul-footer-bottom>li a:hover {
+    color: #f88020;
+}

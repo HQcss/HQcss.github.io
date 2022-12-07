@@ -1,0 +1,292 @@
+/* menu */
+
+.menu-animate-left {
+    animation: menu_animate_left 0.4s
+}
+
+@keyframes menu_animate_left {
+    from {
+        left: -25%;
+        opacity: 1
+    }
+    to {
+        left: 0%;
+        opacity: 1
+    }
+}
+
+
+/* slide */
+
+
+/* slide css animate */
+
+
+/*--------------------------------------------------------------------------------------------- slide 1 */
+
+
+/* NEXT */
+
+
+/* class xử lý hiệu ứng biến mất slide khi click nút next */
+
+.slide-img.NEXT_action_hidden_style_1 {
+    animation: NEXT_action_hidden_style_1 1s forwards;
+}
+
+@keyframes NEXT_action_hidden_style_1 {
+    from {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+/* class xử lý hiệu slide ứng đi vào khi click nút next */
+
+.slide-img.next-element-style-1 {
+    animation: next-element-style-1 1s forwards;
+    transition: 1s;
+}
+
+@keyframes next-element-style-1 {
+    from {
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* PREV */
+
+
+/* class xử lý hiệu ứng biến mất slide khi click nút PREV */
+
+.slide-img.PREV_action_hidden_style_1 {
+    animation: PREV_action_hidden_style_1 1s forwards;
+    transition: 1s;
+}
+
+@keyframes PREV_action_hidden_style_1 {
+    from {
+        transform: translateX(0%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        transform: translateX(100%);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/*class xử lý hiệu slide ứng đi vào khi click nút PREV */
+
+.slide-img.prev-element-style-1 {
+    animation: prev-element-style-1 1s forwards;
+    transition: 1s;
+}
+
+@keyframes prev-element-style-1 {
+    from {
+        transform: translateX(-100%);
+        visibility: hidden;
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------slide 2 */
+
+
+/* class xử lý hiệu ứng biến mất slide khi click nút next */
+
+.slide-img.NEXT_action_hidden_style_2 {
+    animation: NEXT_action_hidden_style_2 1s ease-in-out forwards;
+    transform-origin: 50% 0%;
+}
+
+@keyframes NEXT_action_hidden_style_2 {
+    from {
+        top: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        /* transform: scale(0%); */
+        top: -100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/* class xử lý hiệu slide ứng đi vào khi click nút next */
+
+.slide-img.next-element-style-2 {
+    animation: next-element-style-2 1s ease-in-out forwards;
+}
+
+@keyframes next-element-style-2 {
+    from {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        top: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* PREV */
+
+
+/* class xử lý hiệu ứng biến mất slide khi click nút PREV */
+
+.slide-img.PREV_action_hidden_style_2 {
+    animation: PREV_action_hidden_style_2 1s ease-in-out forwards;
+}
+
+@keyframes PREV_action_hidden_style_2 {
+    from {
+        top: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        /* transform: scale(0%); */
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/*class xử lý hiệu slide ứng đi vào khi click nút PREV */
+
+.slide-img.prev-element-style-2 {
+    animation: prev-element-style-2 1s ease-in-out forwards;
+}
+
+@keyframes prev-element-style-2 {
+    from {
+        top: -100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        top: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------slide 3 */
+
+
+/* class xử lý hiệu ứng biến mất slide khi click nút next */
+
+.slide-img.NEXT_action_hidden_style_3 {
+    animation: NEXT_action_hidden_style_3 1s ease-in-out forwards;
+    transform-origin: 50% 0%;
+}
+
+@keyframes NEXT_action_hidden_style_3 {
+    from {
+        top: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        /* transform: scale(0%); */
+        top: -100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/* class xử lý hiệu slide ứng đi vào khi click nút next */
+
+.slide-img.next-element-style-3 {
+    animation: next-element-style-2 1s ease-in-out forwards;
+}
+
+@keyframes next-element-style-3 {
+    from {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        top: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* PREV */
+
+
+/* class xử lý hiệu ứng biến mất slide khi click nút PREV */
+
+.slide-img.PREV_action_hidden_style_3 {
+    animation: PREV_action_hidden_style_3 1s ease-in-out forwards;
+}
+
+@keyframes PREV_action_hidden_style_3 {
+    from {
+        top: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        /* transform: scale(0%); */
+        top: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/*class xử lý hiệu slide ứng đi vào khi click nút PREV */
+
+.slide-img.prev-element-style-3 {
+    animation: prev-element-style-3 1s ease-in-out forwards;
+}
+
+@keyframes prev-element-style-3 {
+    from {
+        top: -100%;
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        top: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,130 @@
+@font-face {
+    src: url(../font/static/Quicksand-Regular.ttf);
+    font-family: font1;
+}
+
+.Quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Oswald {
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* 1 */
+
+.font-muli {
+    font-family: Muli;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../../font/Muli.ttf);
+}
+
+
+/* 2 */
+
+.font-muli-bold {
+    font-family: Muli-bold;
+}
+
+@font-face {
+    font-family: Muli-bold;
+    src: url(../../font/Muli-Bold.ttf);
+}
+
+
+/* 3 */
+
+.font-muli-italic {
+    font-family: ExtraLightItalic;
+}
+
+@font-face {
+    font-family: ExtraLightItalic;
+    src: url(../../font/Muli\ Light\ Italic.ttf);
+}
+
+
+/* 4 */
+
+.font-payfair-italic {
+    font-family: PlayfairDisplay-MediumItalic;
+}
+
+@font-face {
+    font-family: PlayfairDisplay-MediumItalic;
+    src: url(../../font/Playfair/static/PlayfairDisplay-MediumItalic.ttf);
+}
+
+
+/* 5 */
+
+.font-poppins-bold {
+    font-family: Poppins-bold;
+}
+
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../../font/Poppins/Poppins-Bold.ttf);
+}
+
+
+/* 6 */
+
+.font-Montserrat-Medium {
+    font-family: Montserrat-Medium;
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../../font/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+.font-Montserrat {
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../../font/Mostserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+
+/* 7 */
+
+.font-Arsenal {
+    font-family: Arsenal;
+}
+
+@font-face {
+    font-family: Arsenal;
+    src: url(../../font/Arsenal/Arsenal-Regular.ttf);
+}
+
+
+/* 8 */
+
+.font-Oswald-bold {
+    font-family: Oswald-bold;
+}
+
+@font-face {
+    font-family: Oswald-bold;
+    src: url(../../font/Oswald/static/Oswald-Bold.ttf);
+}
+
+.font-Oswald-medium {
+    font-family: Oswald-medium;
+}
+
+@font-face {
+    font-family: Oswald-medium;
+    src: url(../../font/Oswald/static/Oswald-Medium.ttf);
+}
