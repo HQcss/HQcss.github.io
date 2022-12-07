@@ -1,5 +1,9 @@
 /*-------------------------------------------------------------------------------------- menu-small */
 
+:root {
+    --color: #f5b442;
+}
+
 
 /* style-1 */
 
@@ -9,6 +13,7 @@
     z-index: 1;
     width: 100%;
     padding-bottom: 10px;
+    background-color: var(--color) !important;
 }
 
 .box-menu-setting {
