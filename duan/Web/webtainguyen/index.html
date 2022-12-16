@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Product 01</title>
+
+
+    <!-- Thư viện animate -->
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!-- bootstrap 5.1 W3school -->
+    <link rel="stylesheet" href="plugin/Bootstrap/Boootstrap5-1_w3-school/css/bootstrap5.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- isotope -->
+    <script src="plugin/isotope/isotope.pkgd.min.js"></script>
+    <!-- js for me -->
+
+    <script src="js/1.js"></script>
+    <script src="js/content2.js"></script>
+
+    <!-- css for me -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/content2.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pin-css.css">
+
+
+
+</head>
+
+<body>
+    <!-- right pin -->
+    <div class="box-right-pin w3-card-2 ">
+        <div class="themepin ">
+            <div class="backtotop-tooltip-right">
+                <p class="text-ok">Quay lại trang dự án</p>
+            </div>
+            <a href="../../../page/web-page.html"> <i style="font-size: 18px;" class="fas fa-step-backward cursor"></i></a>
+            <!-- <img class="button-ToTop " src="../../../img/icon/setting.png" alt=" "> -->
+        </div>
+        <div class="musicpin ">
+            <div class="backtotop-tooltip-right">
+                <p class="text-ok">Quay lại trang trước</p>
+            </div>
+            <!-- <img class="button-ToTop " src="../../../img/icon/music.png" alt=" "> -->
+            <a style="font-size: 18px;" onclick="quay_lai_trang_truoc()" class=" title-h1 uppercase active-li fas fa-undo cursor  "></a>
+        </div>
+
+        <div class="themepin ">
+            <div class="backtotop-tooltip-right">
+                <p class="text-ok">Home</p>
+            </div>
+            <a href="../../../index.html"> <i style="font-size: 18px;" class="fas fa-home cursor"></i></a>
+            <!-- <img class="button-ToTop " src="../../../img/icon/setting.png" alt=" "> -->
+        </div>
+    </div>
+    <!-- top -->
+    <div class="top">
+        <div class="menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-sm-6">
+                        <p class="logo">HQ Media</p>
+                    </div>
+                    <div class="col-6 col-sm-6 d-flex flex-row-reverse">
+                        <a href="" class="login">login</a>
+                        <i class="fa fa-bars btn-menu"></i>
+
+                        <div class="large-menu">
+                            <ul>
+                                <li><a href=""> Home</a></li>
+                                <li><a href=""> Video</a></li>
+                                <li><a href=""> Image</a></li>
+                                <li><a href=""> Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-search show">
+            <p class="title-search">Stock photos and videos compiled by
+                <span> HQ media</span> </p>
+            <div class="form-group form-search">
+                <input type="text" class="form-control" id="usr" placeholder="Search for free photos and videos...">
+                <div class="icon">
+                    <i class="fa fa-search"></i>
+
+                </div>
+            </div>
+            <span class="key-search">Key: </span>
+            <span class="key-search">poster fashion , video edit , girl model , fashion , 3D , web design</span>
+        </div>
+        <div class="container-fluid small-menu">
+
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 one-link">
+                    <h6>Video</h6>
+                    <div class="link">
+                        <a href="#">Video phong cảnh</a><br>
+                        <a href="#">Video phối cảnh</a><br>
+                        <a href="#">Video tài nguyên    </a><br>
+                        <a href="#">Video background</a><br>
+                    </div>
+                    <a href="#" class="button">All</a>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 one-link">
+                    <h6>Image</h6>
+                    <div class="link">
+                        <a href="#">Ảnh background</a><br>
+                        <a href="#">Mẫu ảnh</a><br>
+                        <a href="#">Ảnh Raw</a><br>
+                        <a href="#">Tài nguyên thiết kế </a><br>
+
+                    </div>
+                    <a href="#" class="button">All</a>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 one-link">
+                    <h6>Link</h6>
+                    <div class="link">
+                        <a href="#">Thiết kế poster</a><br>
+                        <a href="#">Dựng phim</a><br>
+                        <a href="#">Chỉnh ảnh</a><br>
+                        <a href="#">Dựng 3D</a><br>
+                        <a href="#">Kỹ xảo điện ảnh </a>
+                    </div>
+                    <a href="#" class="button">All</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end top menu -->
+
+    <div class="content">
+        <div class="top-content">
+            <a href="">Home</a>
+            <a href="" class="active">Mẫu ảnh</a>
+            <a href="">Video</a>
+            <a href="">Image thiết kế</a>
+            <a href="">Data thiết kế</a>
+        </div>
+
+        <!-- Orderby -->
+        <div class="container-fluid order-by ">
+            <div class="row">
+                <div class="col-6 scol-sm-6" style="line-height: 39px;">Free Stock Photos
+                </div>
+                <div class="col-6 col-sm-6 d-flex flex-row-reverse">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Sắp xếp
+                    </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">New</a>
+                            <a class="dropdown-item" href="#">A-Z</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-order-by -->
+        <div class="container content-img">
+            <div class="row box-effect">
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (15).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </figure>
+
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (10).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (2).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (12).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (14).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (18).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/01 (1).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/1 (54).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/1 (55).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 box">
+                    <figure>
+                        <div class="img">
+                            <figcaption class="title">
+                                Mẫu ảnh 01
+                            </figcaption>
+                            <img src="img/1 (56).jpg" alt="">
+                            <div class="control">
+                                <div class="control-right">
+                                    <span class="icon3">PNG</span>
+                                    <i class="fa fa-download icon1"></i>
+                                    <i class="fa fa-search-plus icon2"></i>
+                                </div>
+                                <div class="control-left">
+                                    <span>Chuyên mục : Mẫu ảnh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- End-content -->
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-top">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class="h3-setting">About Us</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime est, blanditiis accusamus. Incidunt, aut, quis!</p>
+                    <ul class="ul-footer-top">
+                        <li><a href="#" class="d-flex align-items-center"><span class="fas fa-phone-volume icon-color"></span> (+84)981195878</a></li>
+                        <li><a href="#" class="d-flex align-items-center"><span class="fas fa-envelope icon-color"></span> nguyenhaiquandh@gmail.com</a></li>
+                    </ul>
+
+
+                    <form class="form " action="">
+
+                        <input type="text" class="form-control" placeholder="Enter email">
+
+
+                        <button type="submit" class="btn btn-setting">Send</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h3-setting">Latest Tweet</h3>
+                    <li class="d-flex">
+                        <i class="fab fa-facebook"></i>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi. </div>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fab fa-facebook"></i>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi. </div>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fab fa-facebook"></i>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+                    </li>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h3-setting">Instagram</h3>
+                    <div class="row">
+                        <div class="col-6 col-setting img-setting">
+                            <img src="img/1.webp" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-6 col-setting img-setting">
+                            <img src="img/2.webp" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-6 col-setting img-setting">
+                            <img src="img/3 (2).webp" alt="" style="width: 100%;">
+                        </div>
+                        <div class="col-6 col-setting img-setting">
+                            <img src="img/4.webp" alt="" style="width: 100%;">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End container -->
+        <div class="container footer-bottom">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <ul class="ul-footer-bottom">
+                        <li class="text-highlight"><a href="">Home</a> </li>
+                        <li class="text-highlight"><a href="">About</a></li>
+                        <li class="text-highlight"><a href="">Our works</a></li>
+                        <li class="text-highlight"><a href="">Sevices</a></li>
+                        <li class="text-highlight"><a href="">Blog</a></li>
+                        <li class="text-highlight"><a href="">Contacts</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-md-6 d-flex flex-row-reverse">
+                    <h3 class="h3-setting">HQ Media</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+</body>
+<script>
+    function quay_lai_trang_truoc() {
+        history.back();
+    }
+</script>
+
+</html>
