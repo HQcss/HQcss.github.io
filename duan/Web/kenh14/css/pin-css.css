@@ -1,0 +1,166 @@
+/* w3-card */
+
+.w3-card,
+.w3-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.w3-card-4,
+.w3-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.themepin:hover>a,
+.musicpin:hover>a {
+    color: #625b4f;
+    transition: 0.4s;
+}
+
+.themepin>a,
+.musicpin>a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 9px !important;
+    display: inline-block;
+}
+
+.box-right-pin {
+    /* background-color: #a9aeb4 !important; */
+    /* background-color: var(--color) !important; */
+    background-color: #f5b442;
+    height: auto;
+    padding: 5px 0 5px 0;
+    width: 50px;
+    z-index: 9999;
+    position: fixed;
+    right: 10px;
+    bottom: 45px;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box-left-pin,
+.box-right-pin {
+    width: 40px;
+    bottom: 80px;
+    /* display: none; */
+}
+
+.musicpin:hover .backtotop-tooltip-right,
+.themepin:hover .backtotop-tooltip-right {
+    right: 5%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.musicpin,
+.themepin {
+    color: rgb(255, 255, 255);
+    transition: 0.5s !important;
+    z-index: 0;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.backtotop>img,
+.phone>a>img,
+.icon_fb>a>img,
+.icon_zalo>a>img,
+.musicpin>img,
+.themepin>img {
+    width: 39px;
+    height: 39px;
+}
+
+.backtotop,
+.phone,
+.icon_fb,
+.icon_zalo,
+.musicpin,
+.themepin {
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    z-index: 0;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+}
+
+.backtotop-tooltip-right {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2px;
+    border-radius: 2px;
+    transition-delay: 0.2s;
+    width: 100px;
+    padding-top: 15px;
+    z-index: -2;
+}
+
+.text-ok {
+    /* background-color: #22a6b3; */
+    /* background-color: var(--color); */
+    background: linear-gradient(315deg, rgba(106, 46, 49, 1) 46%, rgba(147, 97, 105, 1) 100%, rgba(248, 165, 194, 1) 100%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.button-ToTop {
+    /* background-color: #09a1a1; */
+    cursor: pointer;
+    /* padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px; */
+    z-index: 9999;
+    /* box-shadow: #00000038 0 0 16px 0px; */
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.button-ToTop:hover {
+    /* background-color: #0f8383; */
+    transform: scale(1);
+    color: white;
+    /* border: 1px solid rgba(0, 0, 0, 0.377); */
+}
+
+@media (min-width:320px) and (max-width:543px) {
+    .box-left-pin,
+    .box-right-pin {
+        width: 40px;
+        bottom: 80px;
+        /* display: none; */
+    }
+}
+
+@media (min-width:320px) and (max-width:543px) {
+    .backtotop>img,
+    .phone>a>img,
+    .icon_fb>a>img,
+    .icon_zalo>a>img,
+    .musicpin>img,
+    .themepin>img {
+        width: 32px;
+        height: 32px;
+    }
+    .button-ToTop {
+        padding: 2px;
+    }
+}

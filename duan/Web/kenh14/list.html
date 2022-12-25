@@ -29,12 +29,43 @@
 
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pin-css.css">
+    <script>
+        function quay_lai_trang_truoc() {
+            history.back();
+        }
+    </script>
 
     <script src="js/1.js"></script>
 
 </head>
 
 <body>
+    <!-- right pin -->
+    <div class="box-right-pin w3-card-2 ">
+        <div class="themepin ">
+            <div class="backtotop-tooltip-right">
+                <p class="text-ok">Quay lại trang dự án</p>
+            </div>
+            <a href="../../../page/web-page.html"> <i style="font-size: 18px;" class="fas fa-step-backward cursor"></i></a>
+            <!-- <img class="button-ToTop " src="../../../img/icon/setting.png" alt=" "> -->
+        </div>
+        <div class="musicpin ">
+            <div class="backtotop-tooltip-right">
+                <p class="text-ok">Quay lại trang trước</p>
+            </div>
+            <!-- <img class="button-ToTop " src="../../../img/icon/music.png" alt=" "> -->
+            <a style="font-size: 18px;" onclick="quay_lai_trang_truoc()" class=" title-h1 uppercase active-li fas fa-undo cursor  "></a>
+        </div>
+
+        <div class="themepin ">
+            <div class="backtotop-tooltip-right">
+                <p class="text-ok">Home</p>
+            </div>
+            <a href="../../../index.html"> <i style="font-size: 18px;" class="fas fa-home cursor"></i></a>
+            <!-- <img class="button-ToTop " src="../../../img/icon/setting.png" alt=" "> -->
+        </div>
+    </div>
 
     <div class="container-fluid pin_menu_top">
         <div class="row bg-black data-menu1">
