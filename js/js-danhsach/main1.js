@@ -8,8 +8,8 @@ window.onload = function(event) {
 App.prototype.processingButton = function(event) {
     const btn = event.currentTarget;
     const slickList = event.currentTarget.parentNode;
-    const track = event.currentTarget.parentNode.querySelector('#track,#track-2');
-    const slick = track.querySelectorAll('.slick,.slick-2');
+    const track = event.currentTarget.parentNode.querySelector('#track');
+    const slick = track.querySelectorAll('.slick');
 
     const slickWidth = slick[0].offsetWidth;
 
