@@ -588,6 +588,18 @@ nav.menutren,
 }
 
 @media (min-width:320px) and (max-width:543px) {
+    .slick-prev {
+        left: 4px !important;
+    }
+    .slick-next {
+        right: 32px !important;
+    }
+    .slick-next-2 {
+        right: 7px !important;
+    }
+    .slick-prev-2 {
+        left: 5px !important;
+    }
     .slick-arrow-2 {
         width: 30px !important;
         height: 30px !important;
@@ -596,8 +608,8 @@ nav.menutren,
     .slick-2 {
         width: 310px !important;
     }
-    .slick-2 a img {
-        height: 172px !important;
+    .slick-2 img {
+        height: 154px !important;
     }
     .row-dungphim {
         padding-left: 15px;

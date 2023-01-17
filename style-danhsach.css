@@ -171,7 +171,9 @@ a {
 
 .slick-2 img {
     object-fit: cover;
-    height: 172px;
+    /* height: 172px; */
+    /* height: 290px; */
+    height: 246px;
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
@@ -263,4 +265,13 @@ button:focus {
 
 .slick-next {
     right: 4px;
+}
+
+.slick-next-2 {
+    /* right: 21px; */
+    right: 3px;
+}
+
+.slick-prev-2 {
+    left: 12px;
 }
