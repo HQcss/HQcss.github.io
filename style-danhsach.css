@@ -160,7 +160,7 @@ a {
     display: block;
 }
 
-.slick a img {
+.slick img {
     object-fit: cover;
     height: 486px;
     width: 100%;
@@ -169,7 +169,7 @@ a {
     transition: .3s ease-in-out;
 }
 
-.slick-2 a img {
+.slick-2 img {
     object-fit: cover;
     height: 290px;
     width: 100%;
@@ -178,7 +178,7 @@ a {
     transition: .3s ease-in-out;
 }
 
-.slick a img.edit-img-page {
+.slick img.edit-img-page {
     object-fit: cover;
     height: 422px;
     width: 100%;
@@ -187,14 +187,19 @@ a {
     transition: .3s ease-in-out;
 }
 
-.slick a img:hover {
+.slick img:hover {
+    opacity: .85;
+}
+
+.slick-2 img:hover {
     opacity: .85;
 }
 
 
 /* buttons */
 
-.slick-arrow {
+.slick-arrow,
+.slick-arrow-2 {
     border-radius: 30px;
     /* background-color: #fff; */
     background-color: #eb8080;
@@ -209,6 +214,21 @@ a {
     transition: 0.4s;
 }
 
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+
+/* 
+.slick-arrow-2 {
+    background-color: #eb80806e;
+} */
+
+.slick-arrow-2:hover {
+    background-color: yellow;
+}
+
 .slick-arrow:hover {
     background-color: yellow;
 }
@@ -217,11 +237,21 @@ a {
     color: rgba(0, 0, 0, 0.582);
 }
 
+.slick-arrow-2:hover.slick-arrow-2 svg {
+    color: rgba(0, 0, 0, 0.582);
+}
+
 .slick-arrow:focus {
     outline: 0;
 }
 
 .slick-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.slick-arrow-2 svg {
     width: 12px;
     height: 100%;
     color: rgba(255, 255, 255, 0.7);

@@ -588,6 +588,17 @@ nav.menutren,
 }
 
 @media (min-width:320px) and (max-width:543px) {
+    .slick-arrow-2 {
+        width: 30px !important;
+        height: 30px !important;
+        background-color: #eb80806e !important;
+    }
+    .slick-2 {
+        width: 310px !important;
+    }
+    .slick-2 a img {
+        height: 172px !important;
+    }
     .row-dungphim {
         padding-left: 15px;
         padding-right: 15px;
