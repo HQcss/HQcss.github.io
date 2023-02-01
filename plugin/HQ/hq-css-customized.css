@@ -588,6 +588,14 @@ nav.menutren,
 }
 
 @media (min-width:320px) and (max-width:543px) {
+    .margin-set-h {
+        margin-top: 19px !important;
+        border-radius: 0px !important;
+        width: auto !important;
+    }
+    .slick-list-2 {
+        height: 195px !important;
+    }
     .slick-prev {
         left: 4px !important;
     }
@@ -616,10 +624,12 @@ nav.menutren,
         background-color: #eb80806e !important;
     }
     .slick-2 {
-        width: 310px !important;
+        /* width: 310px !important; */
+        width: 332px !important;
     }
     .slick-2 img {
-        height: 154px !important;
+        /* height: 154px !important; */
+        height: 165px !important;
     }
     .slick-3 img {
         height: 120px !important;

@@ -265,6 +265,11 @@ a {
     transition: 0.4s;
 }
 
+.margin-set-h {
+    margin-top: 15px !important;
+    border-radius: 5px;
+}
+
 .slick-arrow-3 {
     border-radius: 30px;
     /* background-color: #fff; */
