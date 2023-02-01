@@ -605,11 +605,24 @@ nav.menutren,
         height: 30px !important;
         background-color: #eb80806e !important;
     }
+    .slick-arrow-3 {
+        width: 30px !important;
+        height: 30px !important;
+        background-color: #eb80806e !important;
+    }
+    .slick-arrow-2 {
+        width: 30px !important;
+        height: 30px !important;
+        background-color: #eb80806e !important;
+    }
     .slick-2 {
         width: 310px !important;
     }
     .slick-2 img {
         height: 154px !important;
+    }
+    .slick-3 img {
+        height: 120px !important;
     }
     .row-dungphim {
         padding-left: 15px;
