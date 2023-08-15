@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-*
-{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Dancing Script',Helvetica,Arial,sans-serif;
+    /* font-family: 'Dancing Script',Helvetica,Arial,sans-serif; */
 }
-body
-{
-    background: #000 url(design.jpg);
+
+body {
+    background: rgb(245, 25, 25) url(design.jpg);
     background-attachment: fixed;
     background-blend-mode: hard-light;
 }
-.container
-{
+
+.container {
     position: absolute;
     top: 70px;
     left: 100px;
@@ -24,32 +23,30 @@ body
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 50px 50px rgba(0,0,0,0.5),
-                0 0 0 100px rgba(0,0,0,.1);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5), 0 0 0 100px rgba(0, 0, 0, .1);
 }
 
-.container h2
-{
+.container h2 {
     text-align: center;
     font-size: 10em;
     line-height: 0.7em;
     color: rgb(255, 255, 255);
     margin-top: -80px;
 }
-.container h2 span
-{
+
+.container h2 span {
     display: block;
     font-weight: 300;
     letter-spacing: 6px;
     font-size: 0.2em;
 }
-.countdown
-{
+
+.countdown {
     display: flex;
     margin-top: 50px;
 }
-.countdown div
-{
+
+.countdown div {
     position: relative;
     width: 100px;
     height: 100px;
@@ -61,8 +58,8 @@ body
     font-size: 3em;
     font-weight: 500;
 }
-.countdown div:before
-{
+
+.countdown div:before {
     content: '';
     position: absolute;
     bottom: -30px;
@@ -75,20 +72,20 @@ body
     line-height: 35px;
     font-weight: 300;
 }
-.countdown div#day:before
-{
+
+.countdown div#day:before {
     content: 'NGÀY';
 }
-.countdown div#hour:before
-{
+
+.countdown div#hour:before {
     content: 'GIỜ';
 }
-.countdown div#minute:before
-{
+
+.countdown div#minute:before {
     content: 'PHÚT';
 }
-.countdown div#second:before
-{
+
+.countdown div#second:before {
     content: 'GIÂY';
 }
 
@@ -97,7 +94,7 @@ body
 }
 
 #taitro a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -178,68 +175,120 @@ body
     opacity: 1
 }
 
-@keyframes 			firework-animation {
-    0% {background-color : #ff8426;}
-    25% {background-color : #fffc84;}
-    50% {background-color : #ff83f4;}
-    75% {background-color : #83b6ff;}
-    100% {background-color : #ff8426;}
+@keyframes firework-animation {
+    0% {
+        background-color: #ff8426;
+    }
+    25% {
+        background-color: #fffc84;
+    }
+    50% {
+        background-color: #ff83f4;
+    }
+    75% {
+        background-color: #83b6ff;
+    }
+    100% {
+        background-color: #ff8426;
+    }
 }
-@-webkit-keyframes 	firework-animation {
-    0% {background-color : #ff8426;}
-    25% {background-color : #fffc84;}
-    50% {background-color : #ff83f4;}
-    75% {background-color : #83b6ff;}
-    100% {background-color : #ff8426;}
+
+@-webkit-keyframes firework-animation {
+    0% {
+        background-color: #ff8426;
+    }
+    25% {
+        background-color: #fffc84;
+    }
+    50% {
+        background-color: #ff83f4;
+    }
+    75% {
+        background-color: #83b6ff;
+    }
+    100% {
+        background-color: #ff8426;
+    }
 }
-@keyframes 			firework-seed-animation	{
-    0% {background-color : #ff8426;}
-    25% {background-color : #fffc84;}
-    100% {background-color : #ff8426;}
+
+@keyframes firework-seed-animation {
+    0% {
+        background-color: #ff8426;
+    }
+    25% {
+        background-color: #fffc84;
+    }
+    100% {
+        background-color: #ff8426;
+    }
 }
-@-webkit-keyframes	firework-seed-animation	{
-    0% {background-color : #ff8426;}
-    25% {background-color : #fffc84;}
-    100% {background-color : #ff8426;}
+
+@-webkit-keyframes firework-seed-animation {
+    0% {
+        background-color: #ff8426;
+    }
+    25% {
+        background-color: #fffc84;
+    }
+    100% {
+        background-color: #ff8426;
+    }
 }
-@keyframes 			firework-fade-animation {
-    0% {opacity : 1;}
-    50% {opacity : 1;}
-    100% {opacity : 0;}
+
+@keyframes firework-fade-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
-@-webkit-keyframes 	firework-fade-animation {
-    0% {opacity : 1;}
-    50% {opacity : 1;}
-    100% {opacity : 0;}
+
+@-webkit-keyframes firework-fade-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 .fireWorkBatch {
-    z-index : 999;
+    z-index: 999;
     position: absolute;
-    top : 0px;
-    left : 0px;
-    animation-name : firework-fade-animation;
-    animation-timing-function : cubic-bezier(0.5, 0, 1. 1);
-    animation-duration : 2.5s;
+    top: 0px;
+    left: 0px;
+    animation-name: firework-fade-animation;
+    animation-timing-function: cubic-bezier(0.5, 0, 1. 1);
+    animation-duration: 2.5s;
 }
+
 .fireWorkParticle {
-    z-index : 999;
+    z-index: 999;
     position: absolute;
-    height : 5px;
-    width : 5px;
-    border-radius : 2.5px;
-    animation-name : firework-animation;
-    animation-timing-function : linear;
-    animation-duration : 1s;
-    animation-iteration-count : infinite;
+    height: 5px;
+    width: 5px;
+    border-radius: 2.5px;
+    animation-name: firework-animation;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
+
 .fireWorkSeed {
-    z-index : 999;
+    z-index: 999;
     position: absolute;
-    height : 5px;
-    width : 5px;
-    border-radius : 5px;
-    animation-name : firework-seed-animation;
-    animation-timing-function : linear;
-    animation-duration : 0.5s;
-    animation-iteration-count : infinite;
-}		
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    animation-name: firework-seed-animation;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
