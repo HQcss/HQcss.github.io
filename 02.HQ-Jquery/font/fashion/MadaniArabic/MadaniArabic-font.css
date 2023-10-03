@@ -1,0 +1,89 @@
+@font-face {
+    src: url(../MadaniArabic/Black.ttf);
+    font-family: font-black;
+}
+
+@font-face {
+    src: url(../MadaniArabic/Bold.ttf);
+    font-family: font-bold;
+}
+
+@font-face {
+    src: url(../MadaniArabic/ExtraBold.ttf);
+    font-family: font-extra-bold;
+}
+
+@font-face {
+    src: url(../MadaniArabic/ExtraLight.ttf);
+    font-family: font-extra-light;
+}
+
+@font-face {
+    src: url(../MadaniArabic/Light.ttf);
+    font-family: font-light;
+}
+
+@font-face {
+    src: url(../MadaniArabic/Medium.ttf);
+    font-family: font-medium;
+}
+
+@font-face {
+    src: url(../MadaniArabic/Regular.ttf);
+    font-family: font-regular;
+}
+
+@font-face {
+    src: url(../MadaniArabic/SemiBold.ttf);
+    font-family: font-semibold;
+}
+
+@font-face {
+    src: url(../MadaniArabic/Thin.ttf);
+    font-family: font-thin;
+}
+
+@font-face {
+    src: url(../MadaniArabic/Variable.ttf);
+    font-family: font-variable;
+}
+
+.font-black {
+    font-family: font-black;
+}
+
+.font-extra-bold {
+    font-family: font-extra-bold;
+}
+
+.font-bold {
+    font-family: font-bold;
+}
+
+.font-extra-light {
+    font-family: font-extra-light;
+}
+
+.font-light {
+    font-family: font-light;
+}
+
+.font-medium {
+    font-family: font-medium;
+}
+
+.font-regular {
+    font-family: font-regular;
+}
+
+.font-semibold {
+    font-family: font-semibold;
+}
+
+.font-thin {
+    font-family: font-thin;
+}
+
+.font-variable {
+    font-family: font-variable;
+}

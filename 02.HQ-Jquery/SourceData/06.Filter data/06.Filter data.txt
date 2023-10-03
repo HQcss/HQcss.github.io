@@ -1,0 +1,130 @@
+﻿ <!-- 06.Filter data -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="mb-3 mt-3 search_filter">
+                    <label for="email" class="form-label">Chọn nhanh từ khoá tại đây:</label>
+                    <input type="text" class="form-control tukhoa" list="danhsach" placeholder="Chọn từ khoá...">
+                </div>
+                <datalist id="danhsach">
+                    <option value="người"></option>
+                    <option value="phong_cảnh"></option>
+                </datalist>
+                <header>
+                    <nav>
+                        <ul class="ul-filter">
+                            <li>
+                                <a data-danhmucanh=".người" href="">Người mẫu</a>
+                            </li>
+                            <li>
+                                <a data-danhmucanh=".phong_cảnh" href="">Phong cảnh</a>
+                            </li>
+                            <li>
+                                <a data-danhmucanh="all" href="">All</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <section>
+                    <h6 class="title_filter text-center margin-tb-15 uppercase">Tất cả ảnh</h6>
+                    <div class="content_filter container-fluid">
+                        <div class="row ul_test">
+                            <!-- áp dụng với box-ratio -->
+                            <div class="items_filter người col-12 col-md-6 col-lg-3 ">
+                                <div class="box-ratio ratio-box-content  margin-t-30">
+                                    <div class="image " style="background-image:url(img/LoadMore/1.jpg); "></div>
+                                    <div class="bottom-middle font-light">
+
+                                        <div class="hq-btn btn-flat " style=" background-color: #9b8383;">
+
+                                            <a href=" " class="text-color-60-contrast  " style="font-size: 13px;">See More</a>
+                                        </div>
+                                    </div>
+                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="items_filter phong_cảnh col-12 col-md-6 col-lg-3 ">
+                                <div class="box-ratio ratio-box-content  margin-t-30">
+                                    <div class="image " style="background-image:url(img/LoadMore/nature1.jpg); "></div>
+                                    <div class="bottom-middle font-light">
+
+                                        <div class="hq-btn btn-flat " style=" background-color: #9b8383;">
+
+                                            <a href=" " class="text-color-60-contrast  " style="font-size: 13px;">See More</a>
+                                        </div>
+                                    </div>
+                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                        <span style="min-width: 86px; background-color: #f4acb2;" class="highlight-horizontal  text-color-60-contrast">Nature</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- end áp dụng với oject fix -->
+
+                            <!-- áp dụng với oject fix -->
+                            <div class="items_filter người col-12 col-md-6 col-lg-3  ">
+                                <div class="box-oject-img relative">
+                                    <img class="oject-position-bottom-center" src="img/LoadMore/01.jpg" alt="">
+                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                                    </div>
+
+                                    <div class="hq-btn btn-flat color-30 hover-color-10 absolute bottom-middle" style="transition: 0.4s;">
+                                        <a class="text-color-30-contrast hover-text-color-30-contrast" href="">View</a>
+                                    </div>
+                                </div>
+                                <!-- phần tử title -->
+                                <div class="margin-t-5">
+                                    <h6>Đây là title box-oject</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem ad in ullam incidunt error, eaque velit corrupti voluptatem excepturi quae dolorum dignissimos aspernatur dolores neque commodi quisquam et sit!</p>
+                                </div>
+
+                            </div>
+                            <div class="items_filter phong_cảnh col-12 col-md-6 col-lg-3  ">
+                                <div class="box-oject-img relative">
+                                    <img class="oject-position-bottom-center" src="img/LoadMore/nature5.jpg" alt="">
+
+                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                        <span style="min-width: 86px; background-color:#f6d672;" class="highlight-horizontal  text-color-60-contrast">Nature</span>
+
+                                    </div>
+
+                                    <div class="hq-btn btn-flat color-30 hover-color-10 absolute bottom-middle" style="transition: 0.4s;">
+                                        <a class="text-color-30-contrast hover-text-color-30-contrast" href="">View</a>
+                                    </div>
+                                </div>
+                                <!-- phần tử title -->
+                                <div class="margin-t-5">
+                                    <h6>Đây là title box-oject</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem ad in ullam incidunt error, eaque velit corrupti voluptatem excepturi quae dolorum dignissimos aspernatur dolores neque commodi quisquam et sit!</p>
+                                </div>
+                            </div>
+
+                            <!-- end áp dụng với oject fix -->
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+   
+    Filter();
+    search_filter();
+</script>

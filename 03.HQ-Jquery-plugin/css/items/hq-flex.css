@@ -1,0 +1,20 @@
+.center {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+
+.left-start {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important
+}
+
+.right-end {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}

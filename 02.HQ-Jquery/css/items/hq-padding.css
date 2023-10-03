@@ -1,0 +1,212 @@
+/* padding theo hướng */
+
+.reset-col {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.padding-l-5,
+ul.li-padding-l-5>li {
+    padding-left: 5px;
+}
+
+.padding-r-5,
+ul.li-padding-r-5 {
+    padding-right: 5px;
+}
+
+.padding-t-5,
+.col-padding-t-5 {
+    padding-top: 5px;
+}
+
+.padding-b-5,
+.col-padding-b-5 {
+    padding-bottom: 5px;
+}
+
+.padding-l-10,
+ul.li-padding-l-10 {
+    padding-left: 10px;
+}
+
+.padding-r-10,
+ul.li-padding-r-10 {
+    padding-right: 10px;
+}
+
+.padding-t-10,
+.col-padding-t-10 {
+    padding-top: 10px;
+}
+
+.padding-b-10,
+.col-padding-b-10 {
+    padding-bottom: 10px;
+}
+
+.padding-l-15,
+ul.li-padding-l-15 {
+    padding-left: 15px;
+}
+
+.padding-l-20 {
+    padding-left: 20px;
+}
+
+.padding-l-40 {
+    padding-left: 40px;
+}
+
+.padding-r-15,
+ul.li-padding-r-15 {
+    padding-right: 15px;
+}
+
+.padding-t-15,
+.col-padding-t-15 {
+    padding-top: 15px;
+}
+
+.padding-b-15,
+.col-padding-b-15 {
+    padding-bottom: 15px;
+}
+
+
+/* padding tất cả */
+
+.padding-5,
+ul.li-padding-5>li {
+    padding: 5px;
+}
+
+.padding-10,
+ul.li-padding-10>li {
+    padding: 10px;
+}
+
+.padding-15,
+ul.li-padding-15>li {
+    padding: 15px;
+}
+
+.padding-20,
+ul.li-padding-20>li {
+    padding: 20px;
+}
+
+
+/* padding left right */
+
+.padding-lr-5,
+ul.li-padding-lr-5>li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.padding-lr-10,
+ul.li-padding-lr-10>li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padding-lr-15,
+ul.li-padding-lr-15>li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* padding top bottom */
+
+.padding-tb-5,
+ul.li-padding-tb-5>li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.padding-tb-10,
+ul.li-padding-tb-10>li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-tb-15,
+ul.li-padding-tb-15>li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.padding-tb-20,
+ul.li-padding-tb-20>li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padding-tb-30,
+ul.li-padding-tb-30>li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* row-padding */
+
+.row-padding-30 {
+    padding: 30px 15px;
+}
+
+
+/* col-padding left-right*/
+
+.col-padding-lr-5 {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* 15px mặc định */
+}
+
+.col-padding-lr-10 {
+    padding-left: 25px;
+    padding-right: 25px;
+    /* 15px mặc định */
+}
+
+.col-padding-lr-15 {
+    padding-left: 30px;
+    padding-right: 30px;
+    /* 15px mặc định */
+}
+
+
+/* col-padding theo 1 hướng */
+
+.col-padding-l-5 {
+    padding-left: 20px;
+    /* 15px mặc định */
+}
+
+.col-padding-l-10 {
+    padding-left: 25px;
+    /* 15px mặc định */
+}
+
+.col-padding-l-15 {
+    padding-left: 30px;
+    /* 15px mặc định */
+}
+
+.col-padding-r-5 {
+    padding-right: 20px;
+    /* 15px mặc định */
+}
+
+.col-padding-r-10 {
+    padding-right: 25px;
+    /* 15px mặc định */
+}
+
+.col-padding-r-15 {
+    padding-right: 30px;
+    /* 15px mặc định */
+}

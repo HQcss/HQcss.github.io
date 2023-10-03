@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-center-large-01</title>
+
+    <!-- HQ css -->
+    <link rel="stylesheet" href="../../../css/hqcss-ver-1.9.css">
+    <link rel="stylesheet" href="../../../css/settingProject-System.css">
+
+    <!-- HQ-jquery xem bên dưới body -->
+
+    <!-- bs-dropzone -->
+    <link rel="stylesheet" href="../../../vendor/bs-dropzone/css/bs-dropzone.css">
+
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Thư viện animate -->
+    <link rel="stylesheet" href="../../../vendor/animate/animate.min.css">
+    <!-- bootstrap 5 -->
+
+    <script src="../../../vendor/Bootstrap-w3schools.com/js/jquery.min.js"></script>
+
+
+    <script src="../../../vendor/Bootstrap-w3schools.com/js/popper.min.js"></script>
+
+    <script src="../../../vendor/Bootstrap-w3schools.com/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../../vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css">
+
+    <!-- Thư viện Wow -->
+    <script src="../../../vendor/wow_js/wow.js"></script>
+    <!-- video js -->
+    <link rel="stylesheet" href="../../../vendor/video-js/video-js.css">
+    <script src="../../../vendor/video-js/video.js"></script>
+
+    <!-- theme video js -->
+    <!-- Fantasy -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+    <!-- Sea -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
+    <!-- City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+    <!-- font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Js chuyển động -->
+    <script src="../../../vendor/jquery.easing.1.3/jquery.easing.1.3.js"></script>
+
+    <!-- thư viện fancy box -->
+
+    <!-- Add mousewheel vendor (this is optional) -->
+    <script type="text/javascript" src="../../../vendor/fancybox 3/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="../../../vendor/fancybox 3/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../vendor/fancybox 3/source/jquery.fancybox.css" media="screen" />
+
+    <!-- thư viện teen max -->
+    <script src="../../../vendor/Teenmax/TweenMax.min.js"></script>
+
+    <!-- form-feild -->
+    <link rel="stylesheet" href="../../../vendor/form-feild/css/mobiscroll.jquery.min.css">
+    <script src="../../../vendor/form-feild/js/mobiscroll.jquery.min.js"></script>
+    <!-- OWL slide -->
+    <script src="../../../vendor/OWL_Slide/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../../../vendor/OWL_Slide/owl.carousel.css">
+    <link rel="stylesheet" href="../../../vendor/OWL_Slide/owl.theme.css">
+
+
+    <!-- thư viện isotope -->
+    <script src="../../../vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="../../../vendor/isotope/imagesloaded.pkgd.min.js"></script>
+</head>
+<style>
+    .sidenav a {
+        padding: 8px 0px 8px 8px;
+    }
+    
+    .setting-menu-link {
+        font-size: 19px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .ul-all-menu li {
+        height: 39px !important;
+        line-height: 39px;
+        /* background-color: #d9d9d9; */
+        background-color: #ffc10c;
+        color: #000000 !important;
+        border-top: 1px solid #ccc;
+        transition: 0.4s;
+    }
+    
+    .ul-all-menu li:hover {
+        background-color: #d9d9d9 !important;
+    }
+    
+    .menu-all-data {
+        position: fixed !important;
+    }
+    
+    .sidenav.SideActive {
+        top: 55px !important
+    }
+</style>
+
+<style>
+    .setting-iframe {
+        width: 100%;
+        border: none;
+    }
+    
+    .back-to {
+        position: fixed;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px 10px;
+        font-size: 13px;
+        border-radius: 2px;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 1000;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    
+    .oject-img-border-overlay-hidden-image-zoom::after {
+        content: '';
+        border-inline: 0px solid white;
+        border-block: 0px solid white;
+    }
+    
+    .oject-img-border-overlay-hidden-image-zoom:hover.oject-img-border-overlay-hidden-image-zoom::after {
+        border-inline: 15px solid white;
+        border-block: 15px solid white;
+    }
+</style>
+
+
+
+<body>
+
+
+    <!-- 0.Menu Page -->
+    <!-- menu link ở màn hình nhỏ -->
+    <div id="SideFull2" class="sidenav text-center" style="z-index: 9999;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideFull2()">&times;</a>
+        <ul class="side_bar text-left">
+            <li>
+                <a class=" setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor" style="font-size: 19px;">
+                    <ion-icon name="home-outline" class="padding-r-5"></ion-icon> Home</a>
+            </li>
+            <li>
+                <a class=" setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor">
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Css</a>
+            </li>
+            <li>
+                <a class=" setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor" style="font-size: 19px;">
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ JS</a>
+            </li>
+            <li>
+                <a class=" setting-menu-link link_one_page  hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor">
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> JS Plugin </a>
+            </li>
+
+        </ul>
+
+    </div>
+    <!-- end menu link ở màn hình nhỏ -->
+
+
+
+    <!-- menu link -->
+    <div class="menu-scroll-on-off container-fluid menu_one_page boxMenuSystem color-60" style="position: fixed;z-index: 9999;">
+        <div class="row ">
+            <div class="col-5 col-sm-5 col-md-3 one-page-logo">
+                <a style="color: #ffc107;" href="../../index.html">
+                    <span class="color-60 padding-5 round-medium">HQ Multimedia</span>
+                </a>
+            </div>
+            <div class="col-7 col-sm-7 col-md-9">
+                <header>
+                    <nav class=" right-end ">
+                        <ul class="ul-one-page">
+                            <li><a href="../../index.html" class="uppercase">Home</a></li>
+                            <li><a href="../index.html" class="uppercase">HQ CSS</a></li>
+                            <li><a href="" class="uppercase">HQ Jquery</a></li>
+
+
+                            <li><a class=" cursor uppercase btn-menu">All Menu <ion-icon style="color: #ffc107 ;"  class="padding-l-5" name="logo-youtube"></ion-icon></a></li>
+
+                            <li><a href="" class="uppercase">Login <i style="color: #ffc107 ;" class="fas fa-sign-in-alt"></i></a></li>
+
+
+                        </ul>
+                        <ul class="ul-one-page large-hidden-small-show">
+
+                            <li><a onclick="openSideFull2()" class=" cursor uppercase" style="color:white;">Liên kết <ion-icon style="font-size: 17px;" name="link-outline"></ion-icon></a></li>
+
+
+
+                        </ul>
+
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+    </div>
+    <!-- end menu link -->
+    <!-- menu all -->
+    <div class="container-fluid menu-all-data color-30 padding-b-30 ">
+
+        <div class="row">
+            <div class="col-12 text-color-10 hover-text-color-60 right-end margin-t-15">
+                <i style="font-size: 25px;" class=" btn-menu cursor fas fa-window-close"></i>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ Jquery Plugin</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">Codeigniter 3.x</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ JS Plugin</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ JS Plugin</h6>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- end menu all -->
+
+    <!-- menu-dành cho page slide -->
+    <div id="Side" class="sidenav" style="z-index:9999; top: 0;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times;</a>
+        <a style="font-size: 19px;" href="#">Menu Large Center-01</a>
+        <a style="font-size: 19px;" href="#">Menu Large Primary-02</a>
+
+
+    </div>
+
+
+
+    <!-- end menu-dành cho page slide -->
+    <!-- quay lại trang trước -->
+    <div style="right: 5px;bottom:100px;" class="back-to cursor bottom-right color-10 text-color-10-contrast" onclick="quay_lai_trang_truoc()"><i class="fas fa-hand-point-left"></i></div>
+
+    <!-- end quay lại trang trước -->
+    <!-- back to top -->
+    <div class="backtotop cursor bottom-right color-10 text-color-10-contrast" style="right: 5px;bottom:60px;">
+        <span class="button-ToTop " style="font-size: 16px;">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+        </span>
+    </div>
+    <!-- end back to top -->
+    <!-- On Menu -->
+    <div class="hover-color-60 button-on-menu button-menu-hidden-right cursor color-10 text-color-10-contrast" style="position: fixed;right: 10px; top:16px; z-index: 9999;">
+        <span class=" " style="font-size: 16px;">
+            <i class="fas fa-toggle-on"></i>
+        </span>
+    </div>
+    <!-- end On Menu -->
+    <!-- On Menu Silde -->
+    <div onclick="openSide()" class="hover-color-60 button-on-menu-2 button-menu-hidden-right cursor color-10 text-color-60-contrast" style="position: fixed;right: 55px; top:16px; z-index: 9999;">
+        <span class="" style="font-size: 16px;">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
+    <!-- end On Menu Slide-->
+    <!-- 0.End Menu Page-->
+
+
+
+
+    <!-- 01.CONTENT -->
+    <h6 class="color-60 text-color-10-contrast padding-l-15 padding-tb-15 title-pin"> <i class="fas fa-caret-square-down"></i> Demo Box-content (Box-ratio,Oject-fit)</h6>
+    <div class="container" style="margin-top: 19px;">
+        <div class="row">
+
+
+            <div class="col-12  margin-b-15 border-bottom padding-b-15">
+                <h6>I.Box-content (Box-ratio,Oject-fit) </h6>
+                <!-- <h6 style="font-size: 14px;">Code : <u>Menu-LC-01</u></h6> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sint esse dolorem laudantium earum amet fugit, veritatis assumenda deserunt ipsam quo? Minima itaque voluptatibus qui odio modi temporibus voluptas beatae.</p>
+                <h6>II.Cách sử dụng :</h6>
+                <p>01.Copy đoạn code
+                    <br> 02.Ctrl + F tìm trong file template " <u> <b class="text-color-basic-brown"> Box-content-xx</b></u> " và paste code vào khu vực đó.
+                </p>
+
+
+                <div style="display: flex;">
+
+                    <span style="font-size: 13px; width: 86px ;" class="button_modal_box margin-lr-5 text-center block cursor hover-color-60 padding-5 color-10 text-color-10-contrast round-medium">Setting</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 01.END CONTENT -->
+    <!-- Demo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="color-30 padding-5 margin-t-15 margin-b-30 text-center uppercase">Demo: BP-01</h6>
+            </div>
+            <!-- items 1 -->
+            <div class="col-12 col-md-6 col-lg-3 image-object-fit-translate-left border-special margin-b-15">
+
+                <div class="box-ratio ratio-box-content image-opacity-zoom ">
+                    <div class="image overlay-hidden-show" style="background-image:url(../../../SourceData/SildeOject/101.jpg);"></div>
+                    <!-- <div class="image2" style="background-image:url(../../../../SourceData/SildeOject/box-product-1.jpg );"></div> -->
+                    <div class="top-right hover-show " style="top: 10px; right:10px;">
+                        <a href="">
+                            <div class="cursor relative tooltip-hq flex-align-middle color-10 hover-color-60 margin-tb-5  " style="  padding: 20px;">
+                                <i class="fas fa-shopping-cart padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-left color-10 text-color-10-contrast round-medium">
+                                    <span>Add to Cart</span>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="cursor relative tooltip-hq flex-align-middle color-10 hover-color-60 margin-tb-5  " style=" padding: 20px;">
+                                <i class="fas fa-eye padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-left color-10 text-color-10-contrast round-medium">
+                                    <span>Quick view</span>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="../../../index.html">
+                            <div class="cursor relative tooltip-hq  flex-align-middle color-10 hover-color-60 margin-tb-5  " style=" padding: 20px;">
+                                <i class="fas fa-stream padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-left color-10 text-color-10-contrast round-medium">
+                                    <span>Favourite</span>
+                                </div>
+
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="top-left" style="top: 10px; left:10px">
+                        <span class=" highlight-horizontal border text-color-60 color-60-contrast margin-b-5 ">Hot</span>
+                        <span class=" highlight-horizontal text-color-60 color-60-contrast border margin-b-5 ">-15%</span>
+
+                    </div>
+
+
+                </div>
+
+                <!-- copy code -->
+
+                <a href="../../../SourceFile/Box-product/01.txt" target="_blank">
+                    <h6 style="font-size: 14px;" class=" padding-l-15 color-60 padding-tb-10 hover-color-bosung3 text-color-30 hover-text-color-60"> <i class="far fa-file-code"></i> Copy code (BP-01)</h6>
+                </a>
+
+                <!-- end copy code -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, at aspernatur autem cumque pariatur aperiam necessitatibus nulla, quo itaque ipsam et animi. Dignissimos corrupti beatae iure nihil inventore, temporibus magni?</p>
+                <p><b>-Hiệu ứng tuỳ chỉnh BP-01 : </b><br><span style="font-weight: 500;"> -Thay đổi vị trí button :</span> <u>top-right</u> , <u>top-left</u> , <u>top-middle</u> , <u>bottom-middle</u>...
+                    <br>
+
+                    <span>-Tìm hiểu thêm về : <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Display</a> </span>
+                    <br>
+                    <br>
+                    <span style="font-weight: 500;">-Thay đổi hiệu ứng Box-ratio,image-box-ratio ta tham khảo thêm về các source sau :</span>
+
+
+                    <ul style="display:flex; flex-wrap: wrap;">
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Overlay effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Image-Effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Filter-Effect</a>
+                        </li>
+
+                    </ul>
+                </p>
+
+
+            </div>
+            <!-- end items 1 -->
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h6 class="color-30 padding-5 margin-t-15 margin-b-30 text-center uppercase">Demo: BP-02</h6>
+            </div>
+            <!-- items 1 -->
+            <div class="col-12 col-md-6 col-lg-3 image-object-fit-translate-left border-special margin-b-15">
+                <!-- code html -->
+                <div class="box-ratio ratio-box-content image-opacity-zoom ">
+                    <div class="image overlay-hidden-show" style="background-image:url(../../../SourceData/SildeOject/102.jpg);"></div>
+                    <!-- <div class="image2" style="background-image:url(../../../SourceData/SildeOject/box-product-1.jpg );"></div> -->
+                    <div class="bottom-middle hover-show">
+                        <div class="hq-btn btn-flat margin-tb-15 color-10 hover-color-60" style="min-width: 219px;">
+                            <!-- <a href=""><i class="fas fa-eye hover-icon-hidden text-color-10-contrast" ></i></a> -->
+                            <a style="font-size: 14px;" href="" class="text-color-10-contrast "><i class="fas fa-eye"></i> Quick View</a>
+                        </div>
+                        <div class="hq-btn btn-flat margin-tb-15 color-10 hover-color-60     " style="min-width: 219px;">
+                            <!-- <a href=""><i class="fas fa-shopping-cart hover-icon-show text-color-10-contrast"></i></a> -->
+                            <a style="font-size: 14px;" href="" class=" text-color-10-contrast "><i class="fas fa-shopping-cart "></i> Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="top-right">
+                        <span class=" highlight-horizontal text-color-10-contrast sale ">-15%</span>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- copy code -->
+                <a href="../../../SourceFile/Box-product/02.txt" target="_blank">
+                    <h6 style="font-size: 14px;" class=" padding-l-15 color-60 padding-tb-10 hover-color-bosung3 text-color-30 hover-text-color-60"> <i class="far fa-file-code"></i> Copy code (BP-02)</h6>
+                </a>
+
+
+                <!-- end copy code -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, at aspernatur autem cumque pariatur aperiam necessitatibus nulla, quo itaque ipsam et animi. Dignissimos corrupti beatae iure nihil inventore, temporibus magni?</p>
+                <p><b>-Hiệu ứng tuỳ chỉnh BP-02 : </b><br><span style="font-weight: 500;"> -Thay đổi vị trí button :</span> <u>middle</u> , <u>top-middle</u> , <u>bottom-middle</u>...
+                    <br>
+
+                    <span>-Tìm hiểu thêm về : <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Display</a> </span>
+                    <br>
+                    <br>
+                    <span style="font-weight: 500;">-Thay đổi hiệu ứng Box-ratio,image-box-ratio ta tham khảo thêm về các source sau :</span>
+
+
+                    <ul style="display:flex; flex-wrap: wrap;">
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Overlay effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Image-Effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Filter-Effect</a>
+                        </li>
+
+                    </ul>
+                </p>
+
+
+            </div>
+            <!-- end items 1 -->
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h6 class="color-30 padding-5 margin-t-15 margin-b-30 text-center uppercase">Demo: BP-03</h6>
+            </div>
+            <!-- items 1 -->
+            <div class="col-12 col-md-6 col-lg-3 image-object-fit-translate-left border-special margin-b-15">
+
+                <div class="box-ratio ratio-box-content image-opacity-zoom ">
+                    <div class="image overlay-hidden-show" style="background-image:url(../../../SourceData/SildeOject/103.png);"></div>
+                    <!-- <div class="image2" style="background-image:url(../../../../SourceData/SildeOject/box-product-1.jpg );"></div> -->
+                    <div class="bottom-to hover-show margin-b-15 " style="display: flex ; transition: -0.2s;">
+                        <a href="">
+                            <div class="cursor relative tooltip-hq items-animate-top flex-align-middle color-10 hover-color-60 margin-lr-5  " style="transition-delay: -0.2s; border-radius: 0%; padding: 20px;">
+                                <i class="fas fa-shopping-cart padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-top color-10 text-color-10-contrast round-medium">
+                                    <span>Add to Cart</span>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="cursor relative tooltip-hq items-animate-bottom flex-align-middle color-10 hover-color-60 margin-lr-5  " style="transition-delay: -0.1s; border-radius: 0%; padding: 20px;">
+                                <i class="fas fa-eye padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-top color-10 text-color-10-contrast round-medium">
+                                    <span>Quick view</span>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="../../../index.html">
+                            <div class="cursor relative tooltip-hq items-animate-top flex-align-middle color-10 hover-color-60 margin-lr-5  " style="transition-delay: 0s; border-radius: 0%; padding: 20px;">
+                                <i class="fas fa-stream padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-top color-10 text-color-10-contrast round-medium">
+                                    <span>Favourite</span>
+                                </div>
+
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="top-right" style="top: 10px; right:10px">
+                        <span class=" highlight-horizontal border text-color-60 color-60-contrast margin-b-5 ">Hot</span>
+                        <span class=" highlight-horizontal text-color-60 color-60-contrast border margin-b-5 ">-15%</span>
+
+                    </div>
+
+                </div>
+                <!-- copy code -->
+
+                <a href="../../../SourceFile/Box-product/03.txt" target="_blank">
+                    <h6 style="font-size: 14px;" class=" padding-l-15 color-60 padding-tb-10 hover-color-bosung3 text-color-30 hover-text-color-60"> <i class="far fa-file-code"></i> Copy code (BP-03)</h6>
+                </a>
+
+                <!-- end copy code -->
+
+
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, at aspernatur autem cumque pariatur aperiam necessitatibus nulla, quo itaque ipsam et animi. Dignissimos corrupti beatae iure nihil inventore, temporibus magni?</p>
+                <p><b>-Hiệu ứng tuỳ chỉnh BP-03 : </b><br><span style="font-weight: 500;"> -Thay đổi vị trí button :</span> <u>middle</u> , <u>top-middle</u> , <u>bottom-middle</u>...
+                    <br>
+
+                    <span>-Tìm hiểu thêm về : <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Display</a> </span>
+                    <br>
+                    <br>
+                    <span style="font-weight: 500;">-Thay đổi hiệu ứng Box-ratio,image-box-ratio ta tham khảo thêm về các source sau :</span>
+
+
+                    <ul style="display:flex; flex-wrap: wrap;">
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Overlay effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Image-Effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Filter-Effect</a>
+                        </li>
+
+                    </ul>
+                </p>
+
+
+            </div>
+            <!-- end items 1 -->
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h6 class="color-30 padding-5 margin-t-15 margin-b-30 text-center uppercase">Demo: BP-04</h6>
+            </div>
+            <!-- items 1 -->
+            <div class="col-12 col-md-6 col-lg-3 image-object-fit-translate-left border-special margin-b-15">
+
+                <div class="box-ratio ratio-box-content image-opacity-zoom ">
+                    <div class="image overlay-hidden-show" style="background-image:url(../../../SourceData/SildeOject/104.png);"></div>
+                    <!-- <div class="image2" style="background-image:url(../../../../SourceData/SildeOject/box-product-1.jpg );"></div> -->
+                    <!-- <div class="left-to edit-animate hover-show " style="  bottom: 76%;"> -->
+                    <div class="left-to edit-animate hover-show ">
+                        <a href="">
+                            <div class="cursor relative tooltip-hq flex-align-middle color-10 hover-color-60 margin-tb-5  " style="  padding: 20px;">
+                                <i class="fas fa-shopping-cart padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-right color-10 text-color-10-contrast round-medium">
+                                    <span>Add to Cart</span>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="cursor relative tooltip-hq flex-align-middle color-10 hover-color-60 margin-tb-5  " style=" padding: 20px;">
+                                <i class="fas fa-eye padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-right color-10 text-color-10-contrast round-medium">
+                                    <span>Quick view</span>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="../../../index.html">
+                            <div class="cursor relative tooltip-hq  flex-align-middle color-10 hover-color-60 margin-tb-5  " style=" padding: 20px;">
+                                <i class="fas fa-stream padding-10 text-color-10-contrast "></i>
+                                <div class="tooltip-content tooltip-right color-10 text-color-10-contrast round-medium">
+                                    <span>Favourite</span>
+                                </div>
+
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                    <div class="top-right" style="top: 10px; right:10px">
+                        <span class=" highlight-horizontal border text-color-60 color-60-contrast margin-b-5 ">Hot</span>
+                        <span class=" highlight-horizontal text-color-60 color-60-contrast border margin-b-5 ">-15%</span>
+
+                    </div>
+
+                    <div class="bottom-to hover-show">
+                        <div class="hq-btn margin-tb-15 color-10 hover-color-60" style="min-width: 200px;">
+                            <!-- <a href=""><i class="fas fa-eye hover-icon-hidden text-color-10-contrast" ></i></a> -->
+                            <a style="font-size: 14px;" href="" class="text-color-10-contrast "><i class="fas fa-eye"></i> Quick View</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- copy code -->
+
+                <a href="../../../SourceFile/Box-product/04.txt" target="_blank">
+                    <h6 style="font-size: 14px;" class=" padding-l-15 color-60 padding-tb-10 hover-color-bosung3 text-color-30 hover-text-color-60"> <i class="far fa-file-code"></i> Copy code (BP-04)</h6>
+                </a>
+
+                <!-- end copy code -->
+
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, at aspernatur autem cumque pariatur aperiam necessitatibus nulla, quo itaque ipsam et animi. Dignissimos corrupti beatae iure nihil inventore, temporibus magni?</p>
+                <p><b>-Hiệu ứng tuỳ chỉnh BP-04 : </b><br><span style="font-weight: 500;"> -Thay đổi vị trí button :</span> <u>middle</u> , <u>top-middle</u> , <u>bottom-middle</u>...
+                    <br>
+
+                    <span>-Tìm hiểu thêm về : <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Display</a> </span>
+                    <br>
+                    <br>
+                    <span style="font-weight: 500;">-Thay đổi hiệu ứng Box-ratio,image-box-ratio ta tham khảo thêm về các source sau :</span>
+
+
+                    <ul style="display:flex; flex-wrap: wrap;">
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Overlay effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Image-Effect</a>
+                        </li>
+                        <li>
+                            <a class="margin-lr-5 hover-color-60 padding-5 round-medium hover-text-color-60-contrast" href="">Filter-Effect</a>
+                        </li>
+
+                    </ul>
+                </p>
+
+
+            </div>
+            <!-- end items 1 -->
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h6 class="color-30 padding-5 margin-t-15 margin-b-30 text-center uppercase">Demo: BP-05</h6>
+            </div>
+            <!-- items 1 -->
+            <div class="col-12 col-md-6 col-lg-3 box-not-reverse margin-tb-15 ">
+                <div class="oject-img-border-overlay-hidden-image-zoom ">
+                    <img src="../../../SourceData/SildeOject/0.png" alt="">
+                </div>
+
+                <!-- copy code -->
+
+                <a href="../../../SourceFile/Box-product/05.txt" target="_blank">
+                    <h6 style="font-size: 14px;" class=" padding-l-15 color-60 padding-tb-10 hover-color-bosung3 text-color-30 hover-text-color-60"> <i class="far fa-file-code"></i> Copy code (BP-05)</h6>
+                </a>
+
+                <!-- end copy code -->
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, at aspernatur autem cumque pariatur aperiam necessitatibus nulla, quo itaque ipsam et animi. Dignissimos corrupti beatae iure nihil inventore, temporibus magni?</p>
+                <p>
+                    <b>-Tuỳ chỉnh BP-05 : </b>
+                    <br><span style="font-weight: 500;"> -Vào ObjectFit-EffectCss -> Box-style-1.css :</span>
+                    <p>-Để áp dụng trở thành <a class="text-color-bosung3 hover-text-color-30" href="">box-content-Large</a> : thay class: <u>box-not-reverse</u> thành class <u>box-reverse</u></p>
+
+
+                </p>
+
+
+            </div>
+            <!-- end items 1 -->
+
+        </div>
+    </div>
+    <!-- 2.Demo -->
+
+    <!-- 03.Setting Code -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- nền opacity -->
+            <div class="backgroud_modal_box"></div>
+            <div class="col-12 margin-tb-15 ">
+                <!-- button modal box -->
+
+                <!-- modal-box -->
+                <div class="modal_box color-10 animated modal-bounceInDown" style="background-image: url(SourceData/modal.jpg);">
+                    <div class="modal-box-title color-60">
+                        <h4 class="">Modal title</h4>
+                    </div>
+                    <div class="modal-box-content color-30 padding-15 ">
+                        <p>I.Setting css menu: Tìm vào <b>Css</b>-> <b>items</b>-> <b>menu-css-items -></b>
+                            <b>ul-center.css...</b> </p>
+                        <p>
+                            01.Setting chiều cao menu:
+                            <span>điều chỉnh tại <b>root</b> của mỗi style tương ứng</span>
+                        </p>
+
+                        <p>II.Setting animate menu: Tìm vào <b>Css</b>-> <b>items</b>-> <b>animate-hover.css...</b> </p>
+                        <p>-Tìm mục : "<b>menu ul-center, ul-primary</b>"</p>
+
+                    </div>
+                    <div class="top-right btn-close text-color-60-contrast cursor" style="top: 5px;right: 10px; font-size: 22px;"> <i class="far fa-times-circle"></i></div>
+                    <div class="modal-box-footer right-end " style="align-items:center ; padding-right: 10px;">
+                        <button class="round-medium btn-close  hq-btn btn-flat color-30 text-color-30-contrast" style="height: 39px; width: 30px; font-size: 15px; margin: 0;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 03.End Setting Code -->
+    <!-- 04.Footer -->
+    <div class="container-fluid ">
+        <div class="row color-60 padding-tb-15">
+            <div class="col-12 col-md-6">
+                <ul style=" display: flex; ">
+                    <li>
+                        <a style="font-size: 15px;" class="margin-lr-5 text-color-30 hover-text-color-bosung3" href=""><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a style="font-size: 15px;" class="margin-lr-5 text-color-30 hover-text-color-bosung3" href=""><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div class="col-6 right-end  ">
+                <a style="font-size: 14px; padding-top: 2px;" class="text-color-60-contrast hover-text-color-30" href="">Dự án được phát triển bởi <b class="text-color-bosung3" >HQ Multimedia</b></a>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- 04.End Footer -->
+
+
+    <!-- test -->
+
+    <!-- end test -->
+
+</body>
+<!-- HQ jquery -->
+<link rel="stylesheet" href="../../../css/hq-js-ver-1.9.css">
+<script src="../../../js/hq-js-ver-1.9.js"></script>
+<link rel="stylesheet" href="../../../css/hq-js-setting-project.css">
+<script src="../../../js/hq-js-settingProject.js"></script>
+
+<script>
+    function quay_lai_trang_truoc() {
+        history.back();
+    }
+</script>
+<!-- js project pin title -->
+<script>
+    $(window).scroll(function() {
+        if ($('body,html').scrollTop() > 15) {
+            $('.title-pin').addClass('title-in-top ');
+
+
+        } else {
+            // code else
+            $('.title-pin').removeClass('title-in-top ');
+
+        }
+
+    });
+</script>
+<!-- end js project pin title -->
+
+<!-- js menu small -->
+<script>
+    $(document).ready(function() {
+        $('.content-menu , .link').slideUp(0);
+
+        $('.big-title,.small-title').click(function() {
+
+            $(this).next('.content-menu,.link').slideToggle();
+
+            $(this).toggleClass('active ');
+            $(this).toggleClass('icon-down ');
+        });
+    });
+</script>
+
+<!-- end js menu small -->
+<!-- slick slide -->
+
+<link rel="stylesheet" type="text/css" href="../../../vendor/SlickSlide/css/slick.css" />
+<script type="text/javascript" src="../../../vendor/SlickSlide/js/slick.min.js"></script>
+<script type="text/javascript" src="../../../vendor/SlickSlide/js/slickSlide.js"></script>
+
+<!-- js menu all -->
+<script>
+    $(document).ready(function() {
+
+        $('.btn-menu').click(function(e) {
+            $('.menu-all-data').toggleClass('in-top');
+            $('.box-search').toggleClass('show');
+        });
+
+
+    });
+</script>
+<!-- end js menu all -->
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+    scrollBox_one_items();
+    MenuOnOff();
+    OnePage_project();
+    tab_box();
+    tab_box_img();
+    SrcollAddClass_project();
+    MenuTransform();
+    modal_box();
+    mansory_edit();
+    FancyBox_No_effect();
+    scrollBox();
+    hideShow_box();
+    LoadMore();
+    // Filter();
+    search_filter();
+    Wow_js();
+    slideOWL();
+</script>
+
+
+</html>

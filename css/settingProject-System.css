@@ -1,0 +1,318 @@
+/* container(block-name) -> col(item) -> element-> element-child -> element-child :nth() or a,ul,i ...., */
+
+
+/* block-name -> item -> element -> element-child -> element-child :nth() or a,ul,i ...., */
+
+
+/* menu-primary  */
+
+
+/* .boxMenu-PrimarySystem {} */
+
+
+/* 01.logo-large */
+
+
+/* .boxMenu-PrimarySystem .item-1{} */
+
+
+/* 02.menu small */
+
+
+/* .boxMenu-PrimarySystem .item-2{} */
+
+
+/* 03.logo small */
+
+
+/* .boxMenu-PrimarySystem .item-3{} */
+
+
+/* 04.Menu Large */
+
+
+/* .boxMenu-PrimarySystem .item-4{} */
+
+
+/* 05.box-icon-right */
+
+
+/* .boxMenu-PrimarySystem .item-5{} */
+
+
+/* Filter */
+
+.filter-edit.filter-one-color::before {
+    background: #06131a !important;
+}
+
+.filter-edit.filter-gradient-two-color::before {
+    background: linear-gradient(to bottom left, #ff0241, #ffffff39, #fc0054) !important;
+}
+
+.filter-edit.filter-gradient-three-color::before {
+    background: linear-gradient(to bottom left, #ff0241, #ffffff39, #fc0054) !important;
+}
+
+
+/* Tooltip */
+
+
+/* bottom */
+
+.tooltip-content.tooltip-bottom.tooltip-edit {
+    bottom: -150px !important;
+}
+
+.tooltip-hq:hover .tooltip-bottom.tooltip-edit {
+    bottom: -115px !important;
+}
+
+
+/* top */
+
+.tooltip-content.tooltip-top.tooltip-edit {
+    top: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip-hq:hover .tooltip-top.tooltip-edit {
+    top: -93px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip-edit.tooltip-top::after {
+    content: '';
+    top: 72px;
+}
+
+
+/* right */
+
+.tooltip-content.tooltip-right.tooltip-edit {
+    top: 50%;
+    right: -320px;
+    transform: translateY(-50%);
+}
+
+.tooltip-hq:hover .tooltip-right.tooltip-edit {
+    right: -283px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* left */
+
+.tooltip-content.tooltip-left.tooltip-edit {
+    top: 50%;
+    left: -325px !important;
+}
+
+.tooltip-hq:hover .tooltip-left.tooltip-edit {
+    left: -291px !important;
+}
+
+.tooltip-edit.tooltip-left::after {
+    content: '';
+    left: 268px;
+}
+
+
+/* Dislay */
+
+.middle.display-edit {
+    z-index: 0;
+}
+
+.top-right.display-edit {
+    top: 22px;
+    left: 7px;
+}
+
+
+/* animate */
+
+
+/* 
+.box-ratio:hover .left-to.edit-animate,
+.object-fit-ratio:hover .left-to.edit-animate {
+    left: 20px !important;
+} */
+
+.left-to.edit-animate {
+    position: absolute;
+    top: 5px;
+    left: -50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+}
+
+.box-ratio:hover .left-to.edit-animate,
+.object-fit-ratio:hover .left-to.edit-animate {
+    position: absolute;
+    top: 5px;
+    left: 35px !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* highlight */
+
+.highlight-circle.highlight-edit {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+
+/* code tạm chỉ dùng trong project này */
+
+.color-test {
+    background-color: #f3e2815d;
+}
+
+.title-in-top {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/*  */
+
+.fix-Wowslide {
+    /* position: absolute;
+    */
+    /* background-color: bisque !important; */
+    /* width: 500px; */
+    line-height: 25px;
+    top: 50% !important;
+    left: 68px !important;
+    transform: translateY(-50%) !important;
+    /* padding-left: 20px; */
+}
+
+.img-config-width {
+    width: 55%;
+}
+
+.menu-all-data {
+    /* position: absolute !important; */
+    min-height: 0px;
+    top: -55px !important;
+    /* opacity: 0; */
+    visibility: hidden;
+    z-index: -1;
+    padding-bottom: 30px;
+}
+
+.menu-all-data.in-top {
+    top: 55px !important;
+    min-height: 100vh !important;
+    opacity: 1;
+    z-index: 9999;
+    visibility: visible;
+    transition: 0.4s;
+}
+
+.color-menu-all {
+    background-color: #ffc107;
+}
+
+.index-img {
+    width: 100%;
+    height: 286px;
+    object-fit: cover;
+    object-position: center center;
+    transition: 0.4s;
+}
+
+.card-title {
+    /* color: #ffc107 !important; */
+    color: #db1a50 !important;
+    transition: 0.4s;
+}
+
+.card-title:hover {
+    color: #2f5968 !important;
+}
+
+.index-img:hover {
+    opacity: .5;
+}
+
+.card-content {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-sticker {
+    right: 15px;
+    top: 0;
+    background-color: #ffc107;
+}
+
+@media (min-width:320px) and (max-width:543px) {
+    .img-config-width {
+        width: 100%;
+        margin: auto;
+    }
+     :root {
+        --widthModal: 320px !important;
+    }
+    .title-slide-2 {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:544px) and (max-width:767px) {
+     :root {
+        --widthModal: 544px !important;
+    }
+    .title-slide-2 {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1360px) {}
+
+@media (min-width:1361px) and (max-width:1500px) {}
+
+
+/*end code tạm chỉ dùng trong project này */
+
+.footer-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media (min-width:320px) and (max-width:543px) {
+    .footer-right,
+    .footer-left {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+}
+
+@media (min-width:544px) and (max-width:767px) {
+    .footer-right,
+    .footer-left {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HQ css Home</title>
+
+    <!-- HQ css -->
+    <link rel="stylesheet" href="../../css/hqcss-ver-1.9.css">
+    <link rel="stylesheet" href="../../css/settingProject-System.css">
+
+    <!-- HQ-jquery xem bên dưới body -->
+
+    <!-- bs-dropzone -->
+    <link rel="stylesheet" href="../../vendor/bs-dropzone/css/bs-dropzone.css">
+
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Thư viện animate -->
+    <link rel="stylesheet" href="../../vendor/animate/animate.min.css">
+    <!-- bootstrap 5 -->
+
+    <script src="../../vendor/Bootstrap-w3schools.com/js/jquery.min.js"></script>
+
+
+    <script src="../../vendor/Bootstrap-w3schools.com/js/popper.min.js"></script>
+
+    <script src="../../vendor/Bootstrap-w3schools.com/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css">
+
+    <!-- Thư viện Wow -->
+    <script src="../../vendor/wow_js/wow.js"></script>
+    <!-- video js -->
+    <link rel="stylesheet" href="../../vendor/video-js/video-js.css">
+    <script src="../../vendor/video-js/video.js"></script>
+
+    <!-- theme video js -->
+    <!-- Fantasy -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+    <!-- Sea -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
+    <!-- City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+    <!-- font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Js chuyển động -->
+    <script src="../../vendor/jquery.easing.1.3/jquery.easing.1.3.js"></script>
+
+    <!-- thư viện fancy box -->
+
+    <!-- Add mousewheel vendor (this is optional) -->
+    <script type="text/javascript" src="../../vendor/fancybox 3/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="../../vendor/fancybox 3/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../vendor/fancybox 3/source/jquery.fancybox.css" media="screen" />
+
+    <!-- thư viện teen max -->
+    <script src="../../vendor/Teenmax/TweenMax.min.js"></script>
+
+    <!-- form-feild -->
+    <link rel="stylesheet" href="../../vendor/form-feild/css/mobiscroll.jquery.min.css">
+    <script src="../../vendor/form-feild/js/mobiscroll.jquery.min.js"></script>
+    <!-- OWL slide -->
+    <script src="../../vendor/OWL_Slide/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../../vendor/OWL_Slide/owl.carousel.css">
+    <link rel="stylesheet" href="../../vendor/OWL_Slide/owl.theme.css">
+
+
+    <!-- thư viện isotope -->
+    <script src="../../vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="../../vendor/isotope/imagesloaded.pkgd.min.js"></script>
+</head>
+<style>
+
+</style>
+
+
+<body>
+    <div class="img-background background-center" style="background-image:url(https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80) ; height: 100vh;"></div>
+
+
+    <!-- alert_xx -->
+    <div id="box-alert" class="box-alert bottom-right animate-alert-to-bottom hidden-to-the-right ">
+        <!-- 01.alert_success -->
+        <div class="alert-message color-alert-success relative">
+            <!-- close-alert -->
+            <div class="top-right" style="top: 2px ; right:4px">
+                <span class="cursor" onclick="close_alert()"><ion-icon class="hover-text-color-60-contrast" name="close-outline"></ion-icon></span>
+            </div>
+            <!-- alert -->
+            <span class="flex"><ion-icon style="font-size: 17px;" name="checkmark-circle-outline" class="padding-r-5"></ion-icon> Thao tác thành công !</span>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+<!-- HQ jquery -->
+<link rel="stylesheet" href="../../css/hq-js-ver-1.9.css">
+<script src="../../js/hq-js-ver-1.9.js"></script>
+<link rel="stylesheet" href="../../css/hq-js-setting-project.css">
+<script src="../../js/hq-js-settingProject.js"></script>
+
+<!-- js menu all -->
+<script>
+    $(document).ready(function() {
+
+        $('.btn-menu').click(function(e) {
+            $('.menu-all-data').toggleClass('in-top');
+            $('.box-search').toggleClass('show');
+        });
+
+
+    });
+</script>
+<!-- end js menu all -->
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+    // hiddenAlert();
+    OnePage_project();
+    tab_box();
+    tab_box_img();
+    SrcollAddClass_project();
+    MenuTransform();
+    modal_box();
+    mansory_edit();
+    FancyBox_No_effect();
+    scrollBox();
+    hideShow_box();
+    LoadMore();
+    // Filter();
+    search_filter();
+    Wow_js();
+    slideOWL();
+</script>
+
+
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-center-01</title>
+
+    <!-- HQ css -->
+    <link rel="stylesheet" href="../../../../../css/hqcss-ver-1.9.css">
+    <link rel="stylesheet" href="../../../../../css/settingProject-System.css">
+
+    <!-- HQ-jquery xem bên dưới body -->
+
+    <!-- bs-dropzone -->
+    <link rel="stylesheet" href="../../../../../vendor/bs-dropzone/css/bs-dropzone.css">
+
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Thư viện animate -->
+    <link rel="stylesheet" href="../../../../../vendor/animate/animate.min.css">
+    <!-- bootstrap 5 -->
+
+    <script src="../../../../../vendor/Bootstrap-w3schools.com/js/jquery.min.js"></script>
+
+
+    <script src="../../../../../vendor/Bootstrap-w3schools.com/js/popper.min.js"></script>
+
+    <script src="../../../../../vendor/Bootstrap-w3schools.com/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../../../../vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css">
+
+    <!-- Thư viện Wow -->
+    <script src="../../../../../vendor/wow_js/wow.js"></script>
+    <!-- video js -->
+    <link rel="stylesheet" href="../../../../../vendor/video-js/video-js.css">
+    <script src="../../../../../vendor/video-js/video.js"></script>
+
+    <!-- theme video js -->
+    <!-- Fantasy -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+    <!-- Sea -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
+    <!-- City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+    <!-- font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Js chuyển động -->
+    <script src="../../../../../vendor/jquery.easing.1.3/jquery.easing.1.3.js"></script>
+
+    <!-- thư viện fancy box -->
+
+    <!-- Add mousewheel vendor (this is optional) -->
+    <script type="text/javascript" src="../../../../../vendor/fancybox 3/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="../../../../../vendor/fancybox 3/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../../../vendor/fancybox 3/source/jquery.fancybox.css" media="screen" />
+
+    <!-- thư viện teen max -->
+    <script src="../../../../../vendor/Teenmax/TweenMax.min.js"></script>
+
+    <!-- form-feild -->
+    <link rel="stylesheet" href="../../../../../vendor/form-feild/css/mobiscroll.jquery.min.css">
+    <script src="../../../../../vendor/form-feild/js/mobiscroll.jquery.min.js"></script>
+    <!-- OWL slide -->
+    <script src="../../../../../vendor/OWL_Slide/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../../../../../vendor/OWL_Slide/owl.carousel.css">
+    <link rel="stylesheet" href="../../../../../vendor/OWL_Slide/owl.theme.css">
+
+
+    <!-- thư viện isotope -->
+    <script src="../../../../../vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="../../../../../vendor/isotope/imagesloaded.pkgd.min.js"></script>
+</head>
+<style>
+    .setting-menu-link {
+        font-size: 19px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .ul-all-menu li {
+        height: 39px !important;
+        line-height: 39px;
+        /* background-color: #d9d9d9; */
+        background-color: #ffc10c;
+        color: #000000 !important;
+        border-top: 1px solid #ccc;
+        transition: 0.4s;
+    }
+    
+    .ul-all-menu li:hover {
+        background-color: #d9d9d9 !important;
+    }
+    /* .menu-all-data {
+        top: -131px !important;
+    }
+    
+    .menu-all-data.in-top {
+        top: -31px !important;
+    } */
+    
+    .sidenav.SideActive {
+        top: 55px !important
+    }
+</style>
+
+
+
+<body>
+
+
+
+
+    <!-- CONTENT -->
+    <!--Box-menu -->
+
+    <div class="container-fluid boxMenu-CenterSystem inTop " style="z-index:999 ;">
+        <div class="row color-bosung3 color-background-menu ">
+            <!-- logo large -->
+            <div class="col-md-2 logo-large box-left-menu-center item-1">
+                <a href=""><img src="../../../../../SourceData/logo/kalles.svg" style="width: 95px;" alt="logo"></a>
+            </div>
+            <!-- end logo large -->
+
+            <!-- menu-medium -->
+            <div class="col-2 menu-medium box-left-menu-center item-2">
+                <!-- paste code menu small vào đây -->
+
+                <i class="fas fa-bars cursor" onclick="document.getElementById('menu-small').style.display='block'"></i>
+                <div id="menu-small" class="modal element-1">
+
+                    <div class="modal-content color-60-contrast text-color-30-contrast animate-left element-child-1 absolute" style="top: 55px; overflow: scroll;">
+                        <span onclick="document.getElementById('menu-small').style.display='none'" class=" hover-color-10 fas fa-times button-close-menu"></span>
+                        <div class="container-fluid">
+
+                            <div class="row " style="height:99vh;">
+                                <div class="col-12 reset-col ">
+                                    <h5 class="title-menu color-60 text-color-60-contrast">MENU</h5>
+
+                                    <div class="box">
+                                        <span class=" big-title border-top color-basic-white hover-color-bosung3 hover-text-color-60-contrast">Thiết kế</span>
+                                        <div class="content-menu">
+                                            <span class="small-title text-color-60 hover-color-10 hover-text-color-10-contrast">Poster</span>
+                                            <div class="link ">
+                                                <a href="" class="text-color-60 hover-color-30 hover-text-color-10-contrast">Poster-Thời Trang</a>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end paste code menu small vào đây -->
+
+            </div>
+            <!-- end menu-medium -->
+            <!-- logo-small -->
+            <div class="col-8 logo-medium box-center-menu-center text-center item-3 ">
+                <a href=""><img src="../../../../../SourceData/logo/kalles.svg" style="width: 79px; " alt="logo"></a>
+
+            </div>
+            <!-- end logo-small -->
+            <!-- menu large -->
+            <div class="col-8 menu-large box-center-menu-center item-4">
+                <ul class="ul-center element-1 " style="width: 100%;">
+
+                    <li class="padding-lr-5 hover-color-60 hover-text-color-60-contrast cursor ">
+                        <span style="font-weight:500;">Top</span>
+                        <div class="dropdown-menu-center top-in color-60-contrast padding-b-30">
+                            <div class="container-fluid ">
+                                <div class="row " style="overflow: auto; max-height: 420px; ">
+                                    <div class="col-md-3 ">
+                                        <h4 class="border-bottom text-color-60">HOMEPAGES </h4>
+                                        <ul class="fs-ul ">
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-3 ">
+                                        <h4 class="border-bottom text-color-60">HOMEPAGES </h4>
+                                        <ul class="fs-ul ">
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-3 ">
+                                        <h4 class="border-bottom text-color-60">HOMEPAGES </h4>
+                                        <ul class="fs-ul ">
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-3 ">
+                                        <h4 class="border-bottom text-color-60">HOMEPAGES </h4>
+                                        <ul class="fs-ul ">
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+
+
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="padding-lr-5 hover-color-60 hover-text-color-60-contrast cursor  ">
+                        <span class="" style="font-weight:500;"> Lookbook</span>
+                        <div class="dropdown-menu-center bottom-in color-60-contrast ">
+                            <div class="container-fluid ">
+                                <div class="row " style="overflow: auto; max-height: 480px; padding: 20px 0px; ">
+                                    <div class="col-md-2 ">
+                                        <ul class=" ">
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+                                            <a href=" ">
+                                                <li class=" border-bottom text-color-60 hover-color-60 hover-text-color-60-contrast ">Home Default 1111</li>
+                                            </a>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-10 ">
+                                        <div class="row ">
+                                            <div class="col-md-4 ">
+                                                <div class="box-ratio ratio-box-content image-opacity-zoom ">
+                                                    <div class="image " style="background-image:url(../../../../../SourceData/SildeOject/101.jpg); "></div>
+                                                    <div class="bottom-middle">
+
+                                                        <div class="hq-btn btn-flat color-60 round-medium ">
+                                                            <a href=" "><i class="fas fa-shopping-cart hover-icon-show text-color-10-contrast "></i></a>
+                                                            <a style="font-size: 14px;" href=" " class="text-color-10-contrast hover-text-hidden ">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                                        <span class="highlight-horizontal sale  color-60-contrast text-color-basic-brown">-10%</span>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4 ">
+                                                <div class="box-ratio ratio-box-content image-opacity-zoom">
+                                                    <div class="image " style="background-image:url(../../../../../SourceData/SildeOject/102.jpg); "></div>
+                                                    <div class="bottom-middle">
+
+                                                        <div class="hq-btn btn-flat color-60 round-medium ">
+                                                            <a href=" "><i class="fas fa-shopping-cart hover-icon-show text-color-10-contrast "></i></a>
+                                                            <a style="font-size: 14px;" href=" " class="text-color-10-contrast hover-text-hidden ">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                                        <span class="highlight-horizontal sale  color-60-contrast text-color-basic-brown">-10%</span>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4 ">
+                                                <div class="box-ratio ratio-box-content image-opacity-zoom">
+                                                    <div class="image " style="background-image:url(../../../../../SourceData/Fashion/20.jpg); "></div>
+                                                    <div class="bottom-middle">
+
+                                                        <div class="hq-btn btn-flat color-60 round-medium ">
+                                                            <a href=" "><i class="fas fa-shopping-cart hover-icon-show text-color-10-contrast "></i></a>
+                                                            <a style="font-size: 14px;" href=" " class="text-color-10-contrast hover-text-hidden ">Add to cart</a>
+                                                        </div>
+                                                    </div>
+                                                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                                                        <span class="highlight-horizontal sale  color-60-contrast text-color-basic-brown">-10%</span>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+            <!-- end menu large -->
+
+            <!-- box-icon-right -->
+            <div class="col-2 box-right-menu-center item-5 flex right-end ">
+
+                <div class="icon margin-lr-5 element-1 cursor text-color-60 hover-text-color-60-contrast">
+                    <i class="fas fa-search"></i>
+                </div>
+                <a href="#" class="hover-text-color-60-contrast text-color-60">
+                    <div class="icon margin-lr-5 element-2 cursor ">
+                        <i class="far fa-user"></i>
+                    </div>
+                </a>
+
+                <a href="#" class="hover-text-color-60-contrast text-color-60">
+                    <div class="icon margin-lr-5 relative element-3 cursor hover-text-color-60-contrast">
+                        <i class="fas fa-cart-plus"></i>
+                        <span class="highlight-circle edit top-right color-60-contrast text-color-60  ">10 </span>
+                    </div>
+                </a>
+
+                <a href="#" class="hover-text-color-60-contrast text-color-60">
+                    <div class="icon margin-lr-5 hidden-sm cursor relative element-4 hover-text-color-60-contrast">
+                        <i class="far fa-heart"></i>
+                        <span class="highlight-circle edit top-right edit color-60-contrast text-color-60">20 </span>
+                    </div>
+                </a>
+
+            </div>
+            <!-- end box-icon-right -->
+        </div>
+    </div>
+    <!-- End Box-menu -->
+
+
+    <!-- slide -->
+    <div class="container-fluid">
+
+        <div class="row ">
+            <div class="col-12 reset-col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-interval="90000" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <!-- items carousel -->
+                        <div class="carousel-item ">
+                            <div class="container-fluid box-slide-single-style-1">
+                                <div class="row color-30">
+                                    <div class="col-12 col-md-6 box-Leftslide-single-style-1 ">
+                                        <div class="box-slide-single-style-1-items-img ">
+                                            <img class="box-slide-single-style-1-items-img-1" src="../../../../../SourceData/SildeOject/haloween-bg-overlay-16-1404x1536.jpg " alt=" ">
+                                            <img class=" box-slide-single-style-1-items-img-2 animated fadeInLeft" src="../../../../../SourceData/SildeOject/haloween-banner-left-1354x2048.png " alt=" ">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 box-Rightslide-single-style-1">
+                                        <div class=" items-1 animated zoomInUp">
+                                            <h6 class="element-1">FLAT 40% DISCOUNT
+                                            </h6>
+                                            <h1 class="element-2">Halloween Fashion
+                                            </h1>
+                                            <p class="margin-tb-30 element-3">Rehydrate go needed today hiring looking shoulder sky keywords running.
+                                            </p>
+                                            <div class="hq-btn btn-flat border element-4" style="background-color:transparent;">
+                                                <a href="">SHOP COLLECTION</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end items carousel -->
+
+
+
+                    </div>
+                    <a class="carousel-control-prev setting-prev-bootstrap" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="text-align-middle setting-icon-prev-bootstrap " aria-hidden="true">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next setting-next-bootstrap" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="text-align-middle setting-icon-next-bootstrap" aria-hidden="true">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slide -->
+
+
+
+
+    <!-- END CONTENT -->
+
+</body>
+<!-- HQ jquery -->
+<link rel="stylesheet" href="../../../../../css/hq-js-ver-1.9.css">
+<script src="../../../../../js/hq-js-ver-1.9.js"></script>
+<link rel="stylesheet" href="../../../../../css/hq-js-setting-project.css">
+<script src="../../../../../js/hq-js-settingProject.js"></script>
+
+
+<!-- active slide -->
+<script>
+    $('.carousel-item:first-child').addClass('active');
+    $('.carousel-indicators li:first-child').addClass('active');
+</script>
+<!-- slick slide -->
+
+<link rel="stylesheet" type="text/css" href="../../../../../vendor/SlickSlide/css/slick.css" />
+<script type="text/javascript" src="../../../../../vendor/SlickSlide/js/slick.min.js"></script>
+<script type="text/javascript" src="../../../../../vendor/SlickSlide/js/slickSlide.js"></script>
+
+<!-- js menu all -->
+<script>
+    $(document).ready(function() {
+
+        $('.btn-menu').click(function(e) {
+            $('.menu-all-data').toggleClass('in-top');
+            $('.box-search').toggleClass('show');
+        });
+
+
+    });
+</script>
+<!-- end js menu all -->
+<!-- js menu small -->
+<script>
+    $(document).ready(function() {
+        $('.content-menu , .link').slideUp(0);
+
+        $('.big-title,.small-title').click(function() {
+
+            $(this).next('.content-menu,.link').slideToggle();
+
+            $(this).toggleClass('active ');
+            $(this).toggleClass('icon-down ');
+        });
+    });
+</script>
+
+<!-- end js menu small -->
+<!-- gọi hàm trong hq-jquery -->
+<script>
+    OnePage_project();
+    tab_box();
+    tab_box_img();
+    SrcollAddClass_project();
+    MenuTransform();
+    modal_box();
+    mansory_edit();
+    FancyBox_No_effect();
+    scrollBox();
+    hideShow_box();
+    LoadMore();
+    // Filter();
+    search_filter();
+    Wow_js();
+    slideOWL();
+</script>
+
+
+</html>

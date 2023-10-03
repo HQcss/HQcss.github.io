@@ -1,0 +1,57 @@
+@media (min-width:320px) and (max-width:543px) {}
+
+@media (min-width:544px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1360px) {
+    .block-content-1,
+    .block-content-2,
+    .block-content-3,
+    .block-content-4,
+    .block-content-6,
+    .block-content-8 {
+        padding-left: 70px !important;
+        padding-right: 70px !important;
+    }
+    .block-content-5,
+    .block-content-9 {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+}
+
+@media (min-width:1361px) and (max-width:1500px) {}
+
+@media (min-width:1501px) and (max-width:1920px) {}
+
+
+/* setting sự xuất hiện của menu */
+
+@media (max-width:1025px) {}
+
+@media (min-width:1026px) {}
+
+
+/* @media (min-width:320px) and (max-width:543px) {}
+
+@media (min-width:544px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1360px) {}
+
+@media (min-width:1361px) and (max-width:1500px) {
+    
+}
+
+@media (min-width:1501px) and (max-width:1920px) {}
+
+
+/* setting sự xuất hiện của menu */
+
+
+/* 
+@media (max-width:1025px) {}
+
+@media (min-width:1026px) {}  */

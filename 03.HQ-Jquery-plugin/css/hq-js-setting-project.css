@@ -1,0 +1,140 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    height: auto;
+    background-color: #2c2a29ab;
+    color: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    line-height: 30px;
+}
+
+.button-side-bar {
+    position: fixed;
+    top: 9px;
+    left: 155px !important;
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.button-side-bar.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s;
+}
+
+.bg-items,
+.bg-items2,
+.bg-items3,
+.bg-items4,
+.bg-items5,
+.bg-items6,
+.bg-items7,
+.bg-items8,
+.bg-items9,
+.bg-items10,
+.bg-items11,
+.bg-items12,
+.bg-items13,
+.bg-items14 {
+    background-color: #cccccc42;
+    transition: 0.4s;
+}
+
+.bg-items.bg-scroll,
+.bg-items2.bg-scroll,
+.bg-items3.bg-scroll,
+.bg-items4.bg-scroll,
+.bg-items5.bg-scroll,
+.bg-items6.bg-scroll,
+.bg-items7.bg-scroll,
+.bg-items8.bg-scroll,
+.bg-items9.bg-scroll,
+.bg-items10.bg-scroll,
+.bg-items11.bg-scroll,
+.bg-items12.bg-scroll,
+.bg-items13.bg-scroll,
+.bg-items14.bg-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #ffc107 !important;
+    /* background-color: #1D4D4F !important; */
+    box-shadow: #000000a8 0 0 20px 2px;
+    transition: 0.4s;
+}
+
+
+/* 04.Box Scroll */
+
+.scroll_title_view_code {
+    background-color: #2d2d2d;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.scroll_title_view_code:hover {
+    background-color: var(--color-60);
+}
+
+.scroll_title_view_code.hoverColor_view_code {
+    background-color: var(--color-10);
+}
+
+.active-tabs {
+    background-color: var(--color-30-contrast);
+    color: white;
+}
+
+.tabs-setting {
+    height: 286px;
+    overflow: scroll;
+    padding-top: 15px;
+}
+
+ul.large-hidden-small-show {
+    display: none;
+}
+
+@media (max-width:750px) {
+    ul.large-hidden-small-show {
+        display: block;
+    }
+    .ul-one-page {
+        display: none;
+    }
+    .img-code {
+        width: 100% !important;
+    }
+    .row-width {
+        width: 100% !important;
+        margin: auto;
+    }
+}
+
+.img-code {
+    width: 50%;
+}
+
+
+/* tabs box img */
+
+.row-width {
+    width: 68%;
+    margin: auto;
+}

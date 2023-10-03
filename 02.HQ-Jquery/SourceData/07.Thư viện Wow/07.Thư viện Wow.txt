@@ -1,0 +1,158 @@
+﻿<!-- 07.Thư Viện Wow -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi1.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi2.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi3.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi4.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi5.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi6.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi7.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="wow bounceInLeft col-12 col-md-6 col-lg-3 ">
+                <div class="box-ratio ratio-box-content image-opacity-zoom margin-t-30">
+                    <div class="image " style="background-image:url(img/LoadMore/tapchi8.jpg); "></div>
+                    <div class="bottom-middle font-light">
+
+                        <div class="hq-btn btn-flat " style="width: 139px; height: 30px; background-color: #eee;">
+
+                            <a href=" " class="text-color-60  " style="font-size: 13px;">See More</a>
+                        </div>
+                    </div>
+                    <div style="top:0; right:0;" class="top-right hover-hidden">
+                        <span style="min-width: 86px; background-color: #5a81af;" class="highlight-horizontal  text-color-60-contrast">Fashion</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+   
+    // wow
+    Wow_js();
+</script>

@@ -1,0 +1,7 @@
+
+06.text
+
+
+19.Animate
+
+20.object-fit

@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+
+    <!-- HQ css -->
+    <link rel="stylesheet" href="../../css/hqcss-ver-1.9.css">
+    <link rel="stylesheet" href="../../css/settingProject-System.css">
+
+    <!-- HQ-jquery xem bên dưới body -->
+
+    <!-- bs-dropzone -->
+    <link rel="stylesheet" href="../../vendor/bs-dropzone/css/bs-dropzone.css">
+
+
+
+
+
+    <!-- Thư viện animate -->
+    <link rel="stylesheet" href="../../vendor/animate/animate.min.css">
+    <!-- bootstrap 5 -->
+
+    <script src="../../vendor/Bootstrap-w3schools.com/js/jquery.min.js"></script>
+
+
+    <script src="../../vendor/Bootstrap-w3schools.com/js/popper.min.js"></script>
+
+    <script src="../../vendor/Bootstrap-w3schools.com/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css">
+
+    <!-- Thư viện Wow -->
+    <script src="../../vendor/wow_js/wow.js"></script>
+    <!-- video js -->
+    <link rel="stylesheet" href="../../vendor/video-js/video-js.css">
+    <script src="../../vendor/video-js/video.js"></script>
+
+    <!-- theme video js -->
+    <!-- Fantasy -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+    <!-- Sea -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
+    <!-- City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Js chuyển động -->
+    <script src="../../vendor/jquery.easing.1.3/jquery.easing.1.3.js"></script>
+
+    <!-- thư viện fancy box -->
+
+    <!-- Add mousewheel vendor (this is optional) -->
+    <script type="text/javascript" src="../../vendor/fancybox 3/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="../../vendor/fancybox 3/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../vendor/fancybox 3/source/jquery.fancybox.css" media="screen" />
+
+    <!-- thư viện teen max -->
+    <script src="../../vendor/Teenmax/TweenMax.min.js"></script>
+
+    <!-- form-feild -->
+    <link rel="stylesheet" href="../../vendor/form-feild/css/mobiscroll.jquery.min.css">
+    <script src="../../vendor/form-feild/js/mobiscroll.jquery.min.js"></script>
+    <!-- OWL slide -->
+    <script src="../../vendor/OWL_Slide/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../../vendor/OWL_Slide/owl.carousel.css">
+    <link rel="stylesheet" href="../../vendor/OWL_Slide/owl.theme.css">
+
+
+    <!-- thư viện isotope -->
+    <script src="../../vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="../../vendor/isotope/imagesloaded.pkgd.min.js"></script>
+</head>
+<style>
+    .sidenav a {
+        padding: 8px 0px 8px 8px;
+    }
+    
+    .setting-menu-link {
+        font-size: 19px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .ul-all-menu li {
+        height: 30px !important;
+        line-height: 30px;
+        /* background-color: #d9d9d9; */
+        background-color: #ffc10c;
+        color: #000000 !important;
+        border-top: 1px solid #ccc;
+        transition: 0.4s;
+    }
+    
+    .ul-all-menu li:hover {
+        background-color: #d9d9d9 !important;
+    }
+    
+    .menu-all-data {
+        position: fixed !important;
+    }
+    
+    .sidenav.SideActive {
+        top: 55px !important;
+    }
+</style>
+
+<style>
+    .setting-iframe {
+        width: 100%;
+        border: none;
+    }
+    
+    .back-to {
+        position: fixed;
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px 10px;
+        font-size: 13px;
+        border-radius: 2px;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 1000;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    
+    .oject-img-border-overlay-hidden-image-zoom::after {
+        content: '';
+        border-inline: 0px solid white;
+        border-block: 0px solid white;
+    }
+    
+    .oject-img-border-overlay-hidden-image-zoom:hover.oject-img-border-overlay-hidden-image-zoom::after {
+        border-inline: 15px solid white;
+        border-block: 15px solid white;
+    }
+    
+    .SideActive {
+        width: 250px !important;
+    }
+</style>
+
+
+<style>
+    .footer-set {
+        padding-left: 0px !important;
+    }
+    
+    .sidenav a {
+        font-size: 21px;
+    }
+    
+    .footer-right {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    
+    @media (min-width:320px) and (max-width:543px) {
+        .footer-right,
+        .footer-left {
+            display: -ms-flexbox!important;
+            display: flex!important;
+            -ms-flex-pack: center!important;
+            justify-content: center!important;
+        }
+    }
+    
+    @media (min-width:544px) and (max-width:767px) {
+        .footer-right,
+        .footer-left {
+            display: -ms-flexbox!important;
+            display: flex!important;
+            -ms-flex-pack: center!important;
+            justify-content: center!important;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- 0.Menu Page -->
+    <!-- menu link ở màn hình nhỏ -->
+    <div id="SideFull2" class="sidenav text-center" style="z-index: 9999;">
+        <a href="javascript:void(0)" class="closebtn color-60-contrast flex-align-middle" onclick="closeSideFull2()"><i class="fas fa-times"></i></a>
+        <ul class="side_bar ">
+            <!-- Home -->
+            <a style="font-size: 19px;" class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../../Home.html">
+                <li>
+                    <ion-icon name="home-outline" class="padding-r-5"></ion-icon> Home
+                </li>
+            </a>
+            <!-- HQ css Learn -->
+            <a style="font-size: 19px; background-color: black;" class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Css Learn
+                </li>
+            </a>
+            <!-- HQ Css template -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../../01.Project-HQcss/page-demo/template-index.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Css Template
+                </li>
+            </a>
+            <!-- HQ Jquery -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../../02.HQ-Jquery/HQ-JS-Preview.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Jquery
+                </li>
+            </a>
+            <!-- HQ Jquery Plugin -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../../03.HQ-Jquery-plugin/HQ-JS-Plugin.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Jquery Plugin
+                </li>
+            </a>
+            <!-- Codeigniter 3.x -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../../04.Codeigniter-3.x/Codeigniter-Home.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> Codeigniter 3.x
+                </li>
+            </a>
+
+
+
+
+        </ul>
+
+    </div>
+    <!-- end menu link ở màn hình nhỏ -->
+
+
+
+    <!-- menu link -->
+    <div class="menu-scroll-on-off border-bottom container-fluid menu_one_page boxMenuSystem color-60" style="position: fixed;z-index: 9999;">
+        <div class="row ">
+            <div class="col-5 col-sm-5 col-md-3 one-page-logo">
+                <a style="color: #ffc107;" href="../../index.html">
+                    <span class="color-60 padding-5 round-medium">HQ Multimedia</span>
+                </a>
+            </div>
+            <div class="col-7 col-sm-7 col-md-9">
+                <header>
+                    <nav class=" right-end ">
+                        <ul class="ul-one-page">
+                            <li><a href="../../Home.html" class="uppercase">Home</a></li>
+                            <li><a href="#" class="uppercase active">HQ CSS Learn</a></li>
+
+
+
+                            <li><a class=" cursor uppercase btn-menu">All-Menu <ion-icon style="color: #ffc107 ;"  class="padding-l-5" name="logo-youtube"></ion-icon></a></li>
+
+                            <li><a href="" class="uppercase">Login <i style="color: #ffc107 ;" class="fas fa-sign-in-alt"></i></a></li>
+
+
+                        </ul>
+                        <ul class="ul-one-page large-hidden-small-show">
+
+                            <li><a onclick="openSideFull2()" class=" cursor uppercase" style="color:white;">Liên kết <ion-icon style="font-size: 17px;" name="link-outline"></ion-icon></a></li>
+
+
+
+                        </ul>
+
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+    </div>
+    <!-- end menu link -->
+    <!-- menu all -->
+    <div class="container-fluid menu-all-data color-30 padding-b-30 ">
+
+        <div class="row">
+            <div class="col-12 text-color-10 hover-text-color-60 right-end margin-t-15">
+                <i style="font-size: 25px;" class=" btn-menu btn-close-all-menu cursor fas fa-window-close"></i>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../page-demo/template-index.html">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ CSS Template</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../../02.HQ-Jquery/HQ-JS-Preview.html">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ-JQuery</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../../03.HQ-Jquery-plugin/HQ-JS-Plugin.html">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ JS Plugin</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../../04.Codeigniter-3.x/Codeigniter-Home.html">
+                    <h6 class="hover-color-60 color-menu-all margin-b-5 padding-5 round-medium text-center">Codegniter-3.x</h6>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- end menu all -->
+    <!-- sidebar menu url -->
+    <div id="SideActive" class="sidenav SideActive" style="padding:30px 0 68px 0">
+        <a href="javascript:void(0)" class="closebtn color-10 flex-align-middle " onclick="closeSideActive()"><i class="fas fa-times"></i></a>
+        <a href="../../01.Project-HQcss/page-learn/01.HQ-Menu.html">01.Menu</a>
+        <a href="../../01.Project-HQcss/page-learn/02.HQ-Sidebar.html">02.Sidebar</a>
+        <a href="../../01.Project-HQcss/page-learn/03.HQ-Carousel.html">03.Carousel</a>
+        <a href="../../01.Project-HQcss/page-learn/04.HQ-Box-ratio.html">04.Box-ratio</a>
+        <a href="../../01.Project-HQcss/page-learn/05.HQ-box-ratio-image-effect.html">05.Boxratio-filter-effect</a>
+        <a href="../../01.Project-HQcss/page-learn/06.HQ-boxratio-overlay.html">06.Box-ratio-overlay</a>
+        <a href="../../01.Project-HQcss/page-learn/07.HQ-boxratio-filter-effect.html">07.Box-ratio-filter</a>
+        <a href="../../01.Project-HQcss/page-learn/08.HQ-OjectFix.html">08.Oject-Fix</a>
+        <a href="../../01.Project-HQcss/page-learn/09.HQ-Alert.html">09.Alert</a>
+        <a href="../../01.Project-HQcss/page-learn/10.HQ-Modal.html">10.Modal</a>
+        <a href="../../01.Project-HQcss/page-learn/11.HQ-Button.html">11.Button</a>
+        <a href="../../01.Project-HQcss/page-learn/12.HQ-Color.html">12.Color</a>
+        <a href="../../01.Project-HQcss/page-learn/13.HQ-Border.html">13.Border</a>
+        <a href="../../01.Project-HQcss/page-learn/14.HQ-Display.html">14.Display</a>
+        <a href="../../01.Project-HQcss/page-learn/15.HQ-Animate.html">15.Animate</a>
+        <a href="../../01.Project-HQcss/page-learn/16.HQ-Animate-hover.html">16.Animate-Hover</a>
+        <a class="active" href="../../01.Project-HQcss/page-learn/17.HQ-Flex-Box.html">17.Flex-Box</a>
+        <a href="../../01.Project-HQcss/page-learn/18.HQ-font.html">18.Font</a>
+        <a href="../../01.Project-HQcss/page-learn/19.HQ-Table.html">19.Table</a>
+
+        <a href="../../01.Project-HQcss/page-learn/20.Form-input.html">20.Form-input</a>
+        <a href="../../01.Project-HQcss/page-learn/21.HQ-Text.html">21.Text</a>
+        <a href="../../01.Project-HQcss/page-learn/22.HQ-Margin.html">22.Margin</a>
+        <a href="../../01.Project-HQcss/page-learn/23.HQ-Padding.html">23.Padding</a>
+        <a href="../../01.Project-HQcss/page-learn/24.HQ-Round.html">24.Round</a>
+        <a href="../../01.Project-HQcss/page-learn/25.HQ-Tooltip.html">25.HQ-Tooltip</a>
+        <a href="../../01.Project-HQcss/page-learn/26.HQ-Tab-Box.html">26.HQ-Tab-Box</a>
+
+        <!-- 27 -->
+        <!-- 28 -->
+        <!-- 29 -->
+        <!-- 30 -->
+
+    </div>
+    <!--end sidebar menu url -->
+
+
+    <!-- quay lại trang trước -->
+    <div style="right: 5px;bottom:100px; font-size: 16px;" class="back-to cursor bottom-right color-30 hover-color-bosung3 text-color-10-contrast" onclick="quay_lai_trang_truoc()"><i class="far fa-arrow-alt-circle-left"></i></div>
+
+    <!-- end quay lại trang trước -->
+    <!-- back to top -->
+    <div class="backtotop cursor bottom-right color-30 hover-color-bosung3 text-color-10-contrast" style="right: 5px;bottom:60px;">
+        <span class="button-ToTop " style="font-size: 16px;">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+        </span>
+    </div>
+    <!-- end back to top -->
+    <!-- On Menu -->
+    <div class="hover-color-60 button-on-menu button-menu-hidden-right cursor color-60 hover-color-bosung3 text-color-10-contrast" style="position: fixed;right: 10px; top:16px; z-index: 9999;">
+        <span class=" " style="font-size: 16px;">
+            <i class="fas fa-toggle-on"></i>
+        </span>
+    </div>
+    <!-- end On Menu -->
+    <!-- On Menu Silde -->
+    <div id="openSideActive" onclick="openSideActive()" class="btn-sidebar color-60 hover-color-bosung3 button-on-menu-2 button-menu-hidden-right cursor text-color-60-contrast" style="position: fixed;right: 55px; top:16px; z-index: 9999;">
+        <span class="" style="font-size: 16px;">
+            <i class="fas fa-bars"></i>
+        </span>
+    </div>
+    <!-- end On Menu Slide-->
+
+    <!-- 0.End Menu Page-->
+
+
+
+
+    <!-- 01.CONTENT -->
+    <h6 class="color-60 text-color-10-contrast padding-l-15 padding-tb-15 title-pin"> <i class="fas fa-caret-square-down"></i> HQ-Flex box</h6>
+    <div class="container-fluid main-sidebar set-main" style="margin-top: 29px; ">
+        <div class="row">
+
+
+            <div class="col-12 reset-col  margin-b-15 border-bottom padding-b-15">
+                <!-- <h6 style="font-size: 14px;">Code : <u>Menu-LC-01</u></h6> -->
+                <h6 style="color: brown ; ">I.Cách sử dụng:</h6>
+                <p class="margin-t-5">-Class chính :<b>Flex</b>
+                    <br>
+                    <span>-Class theo mục đích sử dụng :<b>center,right-end,flex-align-middle...</b></span>
+                    <br>
+                    <span>-Ví dụ :</span>
+                    <div><span style="background-color: #2f2828; color: #ecf0f1;">&nbsp; &nbsp;&lt;div class="color-60 <span style="color: #f1c40f;">flex flex-align-middle</span> " style="height: 102px;"&gt;&nbsp; &nbsp;</span>
+                    </div>
+
+
+                </p>
+
+
+
+
+
+                <p>
+                    -Ctrl + F tìm trong file template " <u> <b class="text-color-basic-brown"> Flex-xx</b></u> " và paste code vào khu vực đó.
+                    <br>
+
+                </p>
+                <h6 style="color: brown ; ">II.Khi nào nên sử dụng flex box:</h6>
+                <span class="margin-b-15 block">Theo như khuyến cáo của Mozilla, flexbox chỉ nên được dùng khi bạn xử lí với layout chỉ có một chiều (hoặc là hàng hoặc là cột). Nếu bạn muốn xử lí hai chiều (cả hàng và cột), bạn có thể tìm hiểu về CSS Grid(bootstrap).</span>
+
+
+
+                <div>
+                    <h6 style="color: brown ; ">III.Danh mục:</h6>
+                    <i class="margin-t-15 block"><ion-icon name="arrow-down-outline"></ion-icon> Click để di chuyển đến danh mục cần xem.</i>
+
+                    <div class="margin-t-5">
+                        <b>
+                        <a href="">1. Align Flex</a>
+                    </b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tempora laudantium soluta sapiente veritatis minima possimus odit sequi repellendus! Voluptate sunt ex nulla? Voluptatibus nesciunt sint tempora rem laboriosam neque?</p>
+                    </div>
+                    <div>
+                        <b>
+                        <a href="">2. Change position Flex</a>
+                    </b>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tempora laudantium soluta sapiente veritatis minima possimus odit sequi repellendus! Voluptate sunt ex nulla? Voluptatibus nesciunt sint tempora rem laboriosam neque?</p>
+                    </div>
+                    <div>
+                        <b>
+                        <a href="">3.Nhóm thuộc tính flex</a>
+                    </b>
+
+
+                        <div class="margin-tb-30" style="width: 320px;">
+                            <img src="../../SourceData/learn/oxy.jpg" width="100%" alt="">
+                        </div>
+                        <div class="margin-b-30">
+                            <strong class="text-color-basic-light-green">-Align-items: </strong><span>tác dụng vào trục OY.</span>
+                            <br>
+                            <strong class="text-color-basic-light-green">-Justify-content: </strong><span>tác dụng vào trục OX.</span>
+                            <br>
+                            <strong class="text-color-basic-light-green">-Flex-direction: </strong><span>Xử lý thứ tự sắp xếp các phần tử items theo trục OX và trục OY,với 2 trạng thái sắp xếp <strong>thuận chiều</strong> và <strong>đảo chiều</strong></span>
+                            <br>
+                            <strong class="text-color-basic-light-green">-Flex-wrap: </strong><span>Xử lý resize các phần tử items cho phép item tự động xuống dòng khi kích thước container thay đổi.</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <!-- <div style="display: flex;">
+
+                    <span style="font-size: 13px; width: 86px ;" class="button_modal_box margin-lr-5 text-center block cursor hover-color-60  hover-color-bosung3 padding-5 color-60 text-color-10-contrast round-medium">Setting</span>
+                    <span style="font-size: 13px; width: 86px ;" class=" margin-lr-5 text-center block cursor hover-color-60  hover-color-bosung3 padding-5 color-60 text-color-10-contrast round-medium scroll_title">Copy code</span>
+                </div> -->
+
+            </div>
+
+        </div>
+        <!-- Demo -->
+        <div class="row padding-t-15 background-color-box">
+            <div class="col-12">
+                <h6 class="margin-b-30" style="color:#605514;">I.Align Flex </h6>
+            </div>
+
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, inventore. Accusantium neque consequatur nemo. Sapiente quasi expedita nemo saepe? Voluptas iste, modi reprehenderit molestiae ratione dicta explicabo tempora ex iusto.</p>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.left-start </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 left-start " style="height: 102px;">
+
+
+                        <div class="flex border flex-align-middle color-10" style="width: 68px; height:68px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">Content</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Canh nội dung về bên trái theo trục X</h6>
+                    <p>Sử dụng class <u>left-start</u> ở div bố để canh nội dung bên trong ở vị trí bên trái theo trục X</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.center </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 center " style="height: 102px;">
+
+
+                        <div class="flex border flex-align-middle color-10" style="width: 68px; height:68px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">Content</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Canh giữa nội dung theo trục X</h6>
+                    <p>Sử dụng class <u>center</u> ở div bố để canh nội dung bên trong ở vị trí giữa theo trục X</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3"> .right-end </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 right-end " style="height: 102px;">
+
+
+                        <div class="flex border flex-align-middle color-10" style="width: 68px; height:68px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">Content</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Canh nội dung về bên trái theo trục X</h6>
+                    <p>Sử dụng class <u>right-end</u> ở div bố để canh nội dung bên trong ở vị trí bên trái theo trục X</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-middle-bottom </span>
+                    </div>
+                    <!-- <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div> -->
+                    <div class="color-60 flex-align-middle-bottom " style="height: 102px;">
+
+
+                        <div class="flex border flex-align-middle color-10" style="width: 68px; height:68px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">Content</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Canh nội dung về bên dưới cùng theo trục Y</h6>
+                    <p>Sử dụng class <u>flex-align-middle-bottom </u> ở div bố để canh nội dung bên trong ở vị trí dưới cùng theo trục Y</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-middle </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex-align-middle " style="height: 102px;">
+
+
+                        <div class="flex border flex-align-middle color-10" style="width: 68px; height:68px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">Content</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Canh giữa nội dung theo trục X-Y </h6>
+                    <p>Sử dụng class <u>flex-align-middle </u> ở div bố để canh nội dung bên trong ở vị trí chính tâm
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-middle-top </span>
+                    </div>
+                    <!-- <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div> -->
+                    <div class="color-60 flex-align-middle-top " style="height: 102px;">
+
+
+                        <div class="flex border flex-align-middle color-10" style="width: 68px; height:68px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">Content</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Canh nội dung về bên trên cùng theo trục Y</h6>
+                    <p>Sử dụng class <u>flex-align-middle-top </u> ở div bố để canh nội dung bên trong ở vị trí trên cùng theo trục Y</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="row padding-t-15 margin-t-30 background-color-box">
+            <div class="col-12">
+                <h6 class="margin-b-30" style="color: #605514;">II.Change position Flex </h6>
+            </div>
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias esse porro quas, nihil impedit quisquam ullam eveniet iure rerum delectus at reprehenderit, inventore mollitia ex saepe quaerat harum, consequatur dolorem.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-layout-row </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex-layout-row padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">4</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">5</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">6</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">7</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">8</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">9</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ trái sang phải</h6>
+                    <p>Sử dụng class <u>flex-layout-row </u> ở div bố để sắp xếp nội dung layout,các phần tử sẽ tự động xuống hàng và tự động tính khoảng cách Left-Right còn lại giữa các nội dung
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-layout-row-reverse </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex-layout-row-reverse padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">4</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">5</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">6</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">7</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">8</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ phải sang trái</h6>
+                    <p>Sử dụng class <u>flex-layout-row-reverse </u> ở div bố để sắp xếp nội dung layout,các phần tử sẽ tự động xuống hàng và tự động tính khoảng cách Left-Right còn lại giữa các nội dung
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-layout-column</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex-layout-column padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ trên sang xuống</h6>
+                    <p>Sử dụng class <u>flex-layout-column </u> ở div bố để sắp xếp nội dung layout.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-layout-column-reverse</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex-layout-column-reverse padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ dưới lên trên</h6>
+                    <p>Sử dụng class <u>flex-layout-column-reverse </u> ở div bố để sắp xếp nội dung layout.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-layout-baseline </span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex-layout-baseline  padding-b-5">
+
+
+                        <div class="margin-t-5 border color-bosung3" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 40px; height:40px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 35px; height:35px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ trái sang phải và sẽ căn giữa theo vị trí text dù cho box-content ở kích thước nào</h6>
+                    <p>Sử dụng class <u>flex-layout-baseline  </u> ở div bố để sắp xếp nội dung layout.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row margin-t-15 padding-t-15 background-color-box">
+            <div class="col-12 ">
+                <h6 class="margin-b-15">III.Nhóm thuộc tính flex </h6>
+            </div>
+            <div class="col-12 reset-col text-color-10-contrast color-10 text-center padding-5">
+                <b>01.Flex-wap</b>
+            </div>
+
+            <div class="col-12 margin-b-15">
+                <p class="margin-t-15">
+
+                    <span>
+                        <b>Flex-wap :</b><span> Mặc định, các item sẽ co để vừa vào 1 dòng. Tuy nhiên bạn cũng có thể tuỳ chỉnh flex-wrap.</span>
+                    </span>
+                    <br>
+
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-color-bosung3">-nowrap:</strong>mặc định, tất cả các item sẽ nằm trên một dòng.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">-wrap:</strong>khi kích thước container thay đổi và tổng chiều rộng các item cộng lại lớn hơn chiều rộng của container thì item sẽ tự động xuống dòng.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">-wrap-reverse:</strong>tương tự như wrap, nhưng thay vì xuống dòng thì item sẽ tự động nhảy lên trên theo hướng trục OY.
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-no-wrap</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-no-wrap padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">4</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">5</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">6</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ trái sang phải</h6>
+                    <p>Sử dụng class <u>flex-no-wap </u> ở div bố để sắp xếp nội dung layout,các phần tử sẽ không tự động xuống hàng.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-wrap</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-wrap padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">4</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">5</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">6</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ trái sang phải</h6>
+                    <p>Sử dụng class <u>flex-wrap </u> ở div bố để sắp xếp nội dung layout,các phần tử sẽ tự động xuống hàng.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">flex-wrap-reverse</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-wrap-reverse padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">4</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">5</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">6</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">7</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">8</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">9</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Sắp xếp nội dung layout theo thứ tự từ trái sang phải</h6>
+                    <p>Sử dụng class <u>flex-wrap-reverse </u> ở div bố để sắp xếp nội dung layout,tự động xuống hàng và sắp xếp theo thứ tự từ trái sang phải và dưới lên trên
+
+                    </p>
+                </div>
+
+            </div>
+            <!-- 2 -->
+            <div class="col-12 reset-col text-color-10-contrast color-10 text-center padding-5 margin-t-30 margin-b-15">
+                <b>02.Flex-direction</b>
+            </div>
+            <div class="col-12">
+                <p class=" margin-t-15">
+
+                    <span><b>Flex-direction</b> : là thuộc tính định nghĩa hướng của các item trong container. </span>
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-color-bosung3">-row:</strong> đây là thuộc tính mặc định sẽ sắp xếp từ trái sang phải.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">-row-reverse:</strong> đảo ngược vị trí sắp xếp thành từ phải sang trái.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">-column:</strong> vị trí sắp xếp theo thứ tự trên xuống.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">-column-reverse:</strong> vị trí sắp xếp theo thứ tự từ dưới lên trên.
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-direction-row</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-direction-row padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Đây là thuộc tính mặc định</h6>
+                    <p>Sử dụng class <u>.flex-direction-row </u> ở div bố để sắp xếp nội dung từ trái sang phải.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-direction-row-reverve</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-direction-row-reverve padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Đảo ngược vị trí sắp xếp thành từ phải sang trái
+
+                    </h6>
+                    <p>Sử dụng class <u>.flex-direction-row-reverve </u> ở div bố để sắp xếp nội dung từ trái sang phải.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-direction-column</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-direction-column padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Vị trí sắp xếp theo thứ tự từ trên xuống. </h6>
+                    <p>Sử dụng class <u>.flex-direction-column </u> ở div bố để sắp xếp nội dung từ trên xuống.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-direction-column-reverse</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-direction-column-reverse padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5">Vị trí sắp xếp theo thứ tự từ dưới lên trên. </h6>
+                    <p>Sử dụng class <u>.flex-direction-column-reverse </u> ở div bố để sắp xếp nội dung từ dưới lên trên.
+
+                    </p>
+                </div>
+
+            </div>
+            <!-- 3 -->
+            <div class="col-12 reset-col text-color-10-contrast color-10 text-center padding-5 margin-t-30 margin-b-15">
+                <b>03.Justify-content</b>
+            </div>
+            <div class="col-12">
+                <p class=" margin-t-15">
+
+                    <span><strong>Justify-content</strong>: là thuộc tính định nghĩa hướng của các item trong container. </span>
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-color-bosung3">flex-star:</strong> luôn là giá trị mặc định, kể cả khi bạn không khai báo thuộc tính này, nó sẽ luôn căn phần tử về phía trái, khá giống với float: left.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">flex-end:</strong> flex-end thì giống với float-right, nó căn các phần tử về phía bên phải.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">center:</strong> Nói một cách dễ hiểu, giá trị này sẽ căn giữa các thành phần trong flexbox .
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">space-between                            :</strong> Giá trị này giúp cho các khoảng cách giữa các thành phần luôn bằng nhau, tuy nhiên phần tử đầu luôn nằm sát trái, phần tử cuối luôn nằm sát
+                        phải .
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">space-around :</strong>Giá trị này sẽ kéo giãn các phần tử cho lấp đầy flex, tuy nhiên nếu độ dài của các phần tử quá ngắn thì các phần tử sẽ float: left.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">space-evenly:</strong> Về cơ bản, nó làm cho các khoảng cách ở giữa hai vùng kề cận nhau luôn như nhau.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">stretch                            :</strong> Về cơ bản, nó làm cho các khoảng cách ở giữa hai vùng kề cận nhau luôn như nhau.
+                    </li>
+
+
+                </ul>
+                <br>
+            </div>
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-flex-star:</h4>
+                <img src="../../SourceData/learn/flex/01.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-start</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-start padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Luôn là giá trị mặc định, kể cả khi bạn không khai báo thuộc tính này, nó sẽ luôn căn phần tử về phía trái, khá giống với float: left.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-flex-end:</h4>
+                <img src="../../SourceData/learn/flex/flex-end.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-end</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-end padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Flex-end thì giống với float-right, nó căn các phần tử về phía bên phải.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-center:</h4>
+                <img src="../../SourceData/learn/flex/center.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-center</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-center padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Giá trị này sẽ căn giữa các thành phần trong flexbox .
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-space-between:</h4>
+                <img src="../../SourceData/learn/flex/space-between.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-space-between</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-space-between padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Giá trị này giúp cho các khoảng cách giữa các thành phần luôn bằng nhau, tuy nhiên phần tử đầu luôn nằm sát trái, phần tử cuối luôn nằm sát phải.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-space-around:</h4>
+                <img src="../../SourceData/learn/flex/space-around.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-space-around</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-space-around padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Giá trị này sẽ kéo giãn các phần tử cho lấp đầy flex, tuy nhiên nếu độ dài của các phần tử quá ngắn thì các phần tử sẽ float: left.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-space-evenly:</h4>
+                <img src="../../SourceData/learn/flex/space-evenly.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-space-evenly</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-space-evenly padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Giá trị này về cơ bản, nó làm cho các khoảng cách ở giữa hai vùng kề cận nhau luôn như nhau.
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 margin-t-15">
+                <h4 class="margin-tb-15 text-color-bosung">-stretch:</h4>
+                <img src="../../SourceData/learn/flex/stretch.gif" width="100%" alt="">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-justify-content-stretch</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-justify-content-stretch padding-b-5">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+                    <h6 class="margin-tb-5"></h6>
+                    <p class="margin-t-15">-Giá trị này sẽ kéo giãn các phần tử cho lấp đầy flex, tuy nhiên nếu độ dài của các phần tử quá ngắn thì các phần tử sẽ float: left.
+
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 4 -->
+            <div class="col-12 reset-col text-color-10-contrast color-10 text-center padding-5 margin-t-30 margin-b-15">
+                <b>04.Align-items</b>
+            </div>
+            <div class="col-12">
+                <p class=" margin-t-15">
+
+                    <span>Thuộc tính<strong> Align-items</strong>: trong CSS được sử dụng để căn chỉnh các phần tử con của một container theo trục chính (main axis). Thuộc tính này chỉ áp dụng cho các phần tử có display là flex hoặc grid. </span>
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-color-bosung3">flex-star:</strong> luôn là giá trị mặc định, kể cả khi bạn không khai báo thuộc tính này, nó sẽ luôn căn phần tử về đầu trục Oy.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">center:</strong> căn chỉnh các thành phần giữa trục Oy.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">flex-end:</strong> căn chỉnh các thành phần về cuối trục Oy.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">stretch :</strong>Đây cũng là thuộc tính mặc định, độ dài của phần tử con tự động vừa đủ độ dài của div bố chứa phần tử đó,lưu ý không có tác dụng khi items set cố định chiều cao.
+                    </li>
+                    <li>
+                        <strong class="text-color-bosung3">baseline  :</strong>căn chỉnh các thành phần dựa trên dòng chữ cơ bản của chúng.
+                    </li>
+
+
+
+
+                </ul>
+                <br>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-items-star</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-align-items-star padding-b-5" style="height: 100px;">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+
+                    <p class="margin-t-15">Luôn là giá trị mặc định, kể cả khi bạn không khai báo thuộc tính này, nó sẽ luôn căn phần tử về đầu trục Oy.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-items-center</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-align-items-center padding-b-5" style="height: 100px;">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+
+                    <p class="margin-t-15">Căn chỉnh các thành phần giữa trục Oy.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-items-end</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-align-items-end padding-b-5" style="height: 100px;">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+
+                    <p class="margin-t-15">căn chỉnh các thành phần về cuối trục Oy.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-items-baseline</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-align-items-baseline padding-b-5" style="height: 100px;">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 45px; height:45px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 40px; height:40px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 35px; height:35px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; height:30px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+
+                    <p class="margin-t-15">căn chỉnh các thành phần dựa trên dòng chữ cơ bản của chúng.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="color-30 relative" style="height: 200px;">
+                    <div class="bottom-right">
+                        <span class="padding-lr-5 color-bosung3">.flex-align-items-stretch</span>
+                    </div>
+                    <div class="bottom-left">
+                        <span class="padding-5">Div</span>
+
+                    </div>
+                    <div class="color-60 flex flex-align-items-stretch padding-b-5" style="height: 100px;">
+
+
+                        <div class="margin-t-5 flex border flex-align-middle color-bosung3" style="width: 30px; min-height:15px;">
+                            <span class="text-color-60-contrast " style="font-size: 14px;">0</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; min-height:15px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">1</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; min-height:15px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">2</span>
+                        </div>
+                        <div class="margin-t-5 flex border flex-align-middle color-10" style="width: 30px; min-height:15px;">
+                            <span class="text-color-60-contrast" style="font-size: 14px;">3</span>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <!-- text -->
+                <div class="">
+
+                    <p class="margin-t-15">Độ dài của phần tử con tự động vừa đủ độ dài của div bố chứa phần tử đó.
+                        <span>Lưu ý: <strong>flex-align-items-stretch</strong> không tác dụng khi items set cố định chiều cao.</span>
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end Demo  -->
+    <!-- copy code -->
+    <div class="row border-top margin-t-30 padding-t-15">
+        <div class="col-12 reset-col">
+            <div class="scroll_content " style="padding-bottom: 30px;">
+                <!-- paste content -->
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- html -->
+                        <div class="col-12 reset-col">
+
+                            <p class="margin-l-15">A. code HTML</p>
+                            <!-- paste code html -->
+                            <div class="margin-tb-15 padding-15" style="background-color: #2d2d2d;">
+                                <div>
+                                    <div><span style="color: #7e8c8d;"> <span style="color: #fbeeb8;">&lt;!-- end father-box --&gt;</span></span>
+                                    </div>
+                                    <div><span style="color: #7e8c8d;">&lt;div class="col-12 col-md-6 col-lg-3"&gt;</span></div>
+                                    <div><span style="color: #7e8c8d;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #fbeeb8;"> &lt;!-- child-items --&gt;</span></span>
+                                    </div>
+                                    <div><span style="color: #7e8c8d;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="box-ratio<span style="color: #2dc26b;"> ratio-1-2</span> "&gt;</span>
+                                    </div>
+                                    <div><span style="color: #7e8c8d;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- &lt;div class="image" style="background-image:url(../../SourceData/Fashion/15.jpg);"&gt;&lt;/div&gt; --&gt;</span></div>
+                                    <div><span style="color: #7e8c8d;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="image2" style="background-image:url(../../SourceData/Fashion/22.jpg );"&gt;&lt;/div&gt;</span></div>
+                                    <br /><br />
+                                    <div><span style="color: #7e8c8d;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                                    <div><span style="color: #7e8c8d;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #fbeeb8;">&lt;!-- end child-box --&gt;</span></span>
+                                    </div>
+                                    <div><span style="color: #7e8c8d;">&lt;/div&gt;</span></div>
+                                    <div><span style="color: #7e8c8d;"><span style="color: #fbeeb8;">&lt;!-- end father-box --&gt;</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end paste code html -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end paste content -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end copy code -->
+
+    </div>
+    <!-- 01.END CONTENT -->
+
+    <!-- 03.Setting Code -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- nền opacity -->
+            <div class="backgroud_modal_box"></div>
+            <div class="col-12 margin-tb-15 ">
+                <!-- button modal box -->
+
+                <!-- modal-box -->
+                <div class="modal_box color-10 animated modal-bounceInDown" style="background-image: url(SourceData/modal.jpg);">
+                    <div class="modal-box-title color-60">
+                        <h4 class="">Modal title</h4>
+                    </div>
+                    <div class="modal-box-content color-30 padding-15 ">
+                        <p>-Setting Box ratio: Tìm vào <b>Css</b>-> <b>items</b>-> <b>HQ-box-ratio.css</b> </p>
+                        <p>-Tìm mục : "<b>01.box-ratio</b>"</p>
+
+                    </div>
+                    <div class="top-right btn-close text-color-60-contrast cursor" style="top: 5px;right: 10px; font-size: 22px;"> <i class="far fa-times-circle"></i></div>
+                    <div class="modal-box-footer right-end " style="align-items:center ; padding-right: 10px;">
+                        <button class="round-medium btn-close  hq-btn btn-flat color-30 text-color-30-contrast" style="height: 30px; width: 30px; font-size: 15px; margin: 0;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 03.End Setting Code -->
+
+    <!-- footer -->
+    <div class="container-fluid main-sidebar-2 set-main-2 ">
+
+        <div class="row color-60 padding-tb-15">
+            <div class="col-12 col-md-5 footer-left">
+                <ul style=" display: flex; ">
+                    <li>
+                        <a style="font-size: 15px;" class="margin-lr-5 text-color-30 hover-text-color-bosung3" href=""><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a style="font-size: 15px;" class="margin-lr-5 text-color-30 hover-text-color-bosung3" href=""><i class="fas fa-sign-in-alt"></i> Login</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-7 footer-right">
+                <a style="font-size: 14px; padding-top: 2px;" class="text-color-60-contrast hover-text-color-30 padding-r-15" href=""><i class="fas fa-copyright"></i> Dự án được phát triển bởi <b class="text-color-bosung3" >HQ Multimedia</b></a>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--end footer -->
+
+
+
+
+
+
+
+
+    <!-- test -->
+
+    <!-- end test -->
+
+</body>
+<!-- HQ jquery -->
+<link rel="stylesheet" href="../../css/hq-js-ver-1.9.css">
+<script src="../../js/hq-js-ver-1.9.js"></script>
+<link rel="stylesheet" href="../../css/hq-js-setting-project.css">
+<script src="../../js/hq-js-settingProject.js"></script>
+
+<script>
+    function quay_lai_trang_truoc() {
+        history.back();
+    }
+</script>
+<!-- js project pin title -->
+<script>
+    $(window).scroll(function() {
+        if ($('body,html').scrollTop() > 15) {
+            $('.title-pin').addClass('title-in-top ');
+
+
+        } else {
+            // code else
+            $('.title-pin').removeClass('title-in-top ');
+
+        }
+
+    });
+</script>
+<!-- end js project pin title -->
+
+<!-- js menu small -->
+<script>
+    $(document).ready(function() {
+        $('.content-menu , .link').slideUp(0);
+
+        $('.big-title,.small-title').click(function() {
+
+            $(this).next('.content-menu,.link').slideToggle();
+
+            $(this).toggleClass('active ');
+            $(this).toggleClass('icon-down ');
+        });
+    });
+</script>
+
+<!-- end js menu small -->
+<!-- slick slide -->
+
+<link rel="stylesheet" type="text/css" href="../../vendor/SlickSlide/css/slick.css" />
+<script type="text/javascript" src="../../vendor/SlickSlide/js/slick.min.js"></script>
+<script type="text/javascript" src="../../vendor/SlickSlide/js/slickSlide.js"></script>
+
+<!-- js menu all -->
+<script>
+    $(document).ready(function() {
+
+        $('.btn-menu').click(function(e) {
+            $('.menu-all-data').toggleClass('in-top');
+            $('.box-search').toggleClass('show');
+        });
+
+
+    });
+</script>
+<!-- end js menu all -->
+<!-- js fix menu  -->
+<script>
+    $('.btn-menu').click(function(event) {
+        $('.main-sidebar').removeClass('set-main');
+        document.getElementById("SideActive").style.transform = "translateX(-300px)";
+
+    });
+    $('.btn-close-all-menu').click(function(event) {
+        $('.main-sidebar').addClass('set-main');
+        document.getElementById("SideActive").style.transform = "translateX(0px)";
+    });
+</script>
+<!-- end js fix menu  -->
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+    scrollBox_one_items();
+    MenuOnOff();
+    OnePage_project();
+    tab_box();
+    tab_box_img();
+    SrcollAddClass_project();
+    MenuTransform();
+    modal_box();
+    mansory_edit();
+    FancyBox_No_effect();
+    scrollBox();
+    hideShow_box();
+    LoadMore();
+    // Filter();
+    search_filter();
+    Wow_js();
+    slideOWL();
+</script>
+
+
+</html>

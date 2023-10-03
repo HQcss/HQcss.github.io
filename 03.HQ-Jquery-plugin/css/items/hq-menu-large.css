@@ -1,0 +1,58 @@
+@import url(menu-css-items/ul-center.css);
+@import url(menu-css-items/ul-primary.css);
+@import url(menu-css-items/ul-primary-delay.css);
+@import url(menu-css-items/ul-img-effect.css);
+@import url(menu-css-items/menu-click.css);
+
+/* menu large */
+
+@media (min-width:320px) and (max-width:543px) {}
+
+@media (min-width:544px) and (max-width:767px) {}
+
+@media (min-width:768px) and (max-width:991px) {
+    .menu-medium.menu-medium-click {
+        display: none !important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .menu-medium.menu-medium-click {
+        display: none !important;
+    }
+}
+
+@media (max-width:1025px) {}
+
+@media (min-width:1026px) {
+    .menu-medium,
+    .logo-medium {
+        display: none !important;
+    }
+}
+
+.inTop {
+    position: fixed !important;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.inTop.bg-scroll {
+    transition: 0.5s;
+    background-color: var(--background-menu-intop-level-1) !important;
+    /* color: #000000 !important; */
+}
+
+.box-left-menu-center,
+.box-center-menu-center,
+.box-right-menu-center {
+    line-height: var(--menuHeight);
+    color: var(--text-color-menu-level-1);
+}
+
+.box-left-menu-primary,
+.box-center-menu-primary,
+.box-right-menu-primary {
+    line-height: var(--menuPrimaryHeight);
+    color: var(--text-color-menu-level-1);
+}

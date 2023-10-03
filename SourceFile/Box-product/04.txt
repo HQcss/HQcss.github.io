@@ -1,0 +1,57 @@
+   <div class="col-12 col-md-6 col-lg-3 image-object-fit-translate-left border-special margin-b-15">
+
+        <div class="box-ratio ratio-box-content image-opacity-zoom ">
+            <div class="image overlay-hidden-show" style="background-image:url(../SourceData/SildeOject/104.png);"></div>
+            <!-- <div class="image2" style="background-image:url(../../../../SourceData/SildeOject/box-product-1.jpg );"></div> -->
+            <!-- <div class="left-to edit-animate hover-show " style="  bottom: 76%;"> -->
+            <div class="left-to edit-animate hover-show ">
+                <a href="">
+                    <div class="cursor relative tooltip-hq text-align-middle color-10 hover-color-60 margin-tb-5  " style="  padding: 20px;">
+                        <i class="fas fa-shopping-cart padding-10 text-color-10-contrast "></i>
+                        <div class="tooltip-content tooltip-right color-10 text-color-10-contrast round-medium">
+                            <span>Add to Cart</span>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="cursor relative tooltip-hq text-align-middle color-10 hover-color-60 margin-tb-5  " style=" padding: 20px;">
+                        <i class="fas fa-eye padding-10 text-color-10-contrast "></i>
+                        <div class="tooltip-content tooltip-right color-10 text-color-10-contrast round-medium">
+                            <span>Quick view</span>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="../../../index.html">
+                    <div class="cursor relative tooltip-hq  text-align-middle color-10 hover-color-60 margin-tb-5  " style=" padding: 20px;">
+                        <i class="fas fa-stream padding-10 text-color-10-contrast "></i>
+                        <div class="tooltip-content tooltip-right color-10 text-color-10-contrast round-medium">
+                            <span>Favourite</span>
+                        </div>
+
+                    </div>
+                </a>
+
+
+            </div>
+
+            <div class="top-right" style="top: 10px; right:10px">
+                <span class=" highlight-horizontal border text-color-60 color-60-contrast margin-b-5 ">Hot</span>
+                <span class=" highlight-horizontal text-color-60 color-60-contrast border margin-b-5 ">-15%</span>
+
+            </div>
+
+            <div class="bottom-to hover-show">
+                <div class="hq-btn margin-tb-15 color-10 hover-color-60" style="min-width: 200px;">
+                    <!-- <a href=""><i class="fas fa-eye hover-icon-hidden text-color-10-contrast" ></i></a> -->
+                    <a style="font-size: 14px;" href="" class="text-color-10-contrast "><i class="fas fa-eye"></i> Quick View</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>

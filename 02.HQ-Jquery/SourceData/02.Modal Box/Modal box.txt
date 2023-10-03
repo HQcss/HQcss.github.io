@@ -1,0 +1,34 @@
+﻿ <!-- 02.Modal box -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- nền opacity -->
+            <div class="backgroud_modal_box"></div>
+            <div class="col-12 margin-tb-15 ">
+                <!-- button modal box -->
+                <div class="center">
+                    <button style="transition:0.4s ;" class="button_modal_box hq-btn btn-flat hover-color-30 hover-text-color-30-contrast color-60 text-color-60-contrast "> Modal box </button>
+                </div>
+                <!-- modal-box -->
+                <div class="modal_box color-10" style="background-image: url(SourceData/modal.jpg);">
+                    <div class="modal-box-title">
+                        <h4 class="">Modal title</h4>
+                    </div>
+                    <div class="modal-box-content padding-15 ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque, doloribus non dolorem explicabo laudantium pariatur fuga accusamus ducimus. Exercitationem impedit neque accusantium fugiat animi ex consequatur qui cum eligendi.</p>
+                    </div>
+                    <div class="modal-box-footer right-end " style="align-items:center ; padding-right: 10px;">
+                        <button class="btn-close  hq-btn btn-flat color-30 text-color-30-contrast" style="height: 39px; width: 30px; ">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+
+    modal_box();
+   
+</script>

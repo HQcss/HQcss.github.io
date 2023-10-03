@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HQ Jquery-Plugin</title>
+
+    <!-- HQ css -->
+    <link rel="stylesheet" href="css/hqcss-ver-1.9.css">
+    <link rel="stylesheet" href="css/settingProject-System.css">
+
+    <!-- HQ-jquery xem bên dưới body -->
+
+    <!-- bs-dropzone -->
+    <link rel="stylesheet" href="vendor/bs-dropzone/css/bs-dropzone.css">
+
+
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Thư viện animate -->
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
+    <!-- bootstrap 5 -->
+
+    <script src="vendor/Bootstrap-w3schools.com/js/jquery.min.js"></script>
+
+
+    <script src="vendor/Bootstrap-w3schools.com/js/popper.min.js"></script>
+
+    <script src="vendor/Bootstrap-w3schools.com/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css">
+
+    <!-- Thư viện Wow -->
+    <script src="vendor/wow_js/wow.js"></script>
+    <!-- video js -->
+    <link rel="stylesheet" href="vendor/video-js/video-js.css">
+    <script src="vendor/video-js/video.js"></script>
+
+    <!-- theme video js -->
+    <!-- Fantasy -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+    <!-- Forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+
+    <!-- Sea -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+
+    <!-- City -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
+    <!-- font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Js chuyển động -->
+    <script src="vendor/jquery.easing.1.3/jquery.easing.1.3.js"></script>
+
+    <!-- thư viện fancy box -->
+
+    <!-- Add mousewheel vendor (this is optional) -->
+    <script type="text/javascript" src="vendor/fancybox 3/lib/jquery.mousewheel.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="vendor/fancybox 3/source/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/fancybox 3/source/jquery.fancybox.css" media="screen" />
+
+    <!-- thư viện teen max -->
+    <script src="vendor/Teenmax/TweenMax.min.js"></script>
+
+    <!-- form-feild -->
+    <link rel="stylesheet" href="vendor/form-feild/css/mobiscroll.jquery.min.css">
+    <script src="vendor/form-feild/js/mobiscroll.jquery.min.js"></script>
+    <!-- OWL slide -->
+    <script src="vendor/OWL_Slide/owl.carousel.js"></script>
+    <link rel="stylesheet" href="vendor/OWL_Slide/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/OWL_Slide/owl.theme.css">
+
+
+    <!-- thư viện isotope -->
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/isotope/imagesloaded.pkgd.min.js"></script>
+
+
+
+</head>
+
+<style>
+    .menu-all-data {
+        position: fixed !important;
+    }
+    
+    .menu-all-data.in-top {
+        top: 54px !important;
+    }
+</style>
+
+<body>
+    <!-- 0.Menu Page -->
+    <!-- menu link ở màn hình nhỏ -->
+    <div id="SideFull2" class="sidenav" style="z-index: 9999;">
+        <a href="javascript:void(0)" class="closebtn edit color-60-contrast hover-color-30 text-color-10 text-align-middle" onclick="closeSideFull2()"><i class="fas fa-times"></i></a>
+        <ul class="side_bar ">
+            <!-- Home -->
+            <a style="font-size: 19px;" class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../Home.html">
+                <li>
+                    <ion-icon name="home-outline" class="padding-r-5"></ion-icon> Home
+                </li>
+            </a>
+            <!-- HQ css Learn -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Css Learn
+                </li>
+            </a>
+            <!-- HQ Css template -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../01.Project-HQcss/page-demo/template-index.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Css Template
+                </li>
+            </a>
+            <!-- HQ Jquery -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../02.HQ-Jquery/HQ-JS-Preview.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Jquery
+                </li>
+            </a>
+            <!-- HQ Jquery Plugin -->
+            <a style="font-size: 19px; background-color: black; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../03.HQ-Jquery-plugin/HQ-JS-Plugin.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> HQ Jquery Plugin
+                </li>
+            </a>
+            <!-- Codeigniter 3.x -->
+            <a style="font-size: 19px; " class="setting-menu-link link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor flex-align-items-center" href="../04.Codeigniter-3.x/Codeigniter-Home.html">
+                <li>
+                    <ion-icon name="link-outline" class="padding-r-5"></ion-icon> Codeigniter 3.x
+                </li>
+            </a>
+
+
+
+
+        </ul>
+
+    </div>
+    <!-- end menu link ở màn hình nhỏ -->
+
+
+
+    <!-- menu link -->
+    <div class="menu-scroll-on-off border-bottom container-fluid menu_one_page boxMenuSystem color-60" style="position: fixed;z-index: 9995;">
+        <div class="row ">
+            <div class="col-5 col-sm-5 col-md-3 one-page-logo">
+                <a style="color: #ffc107;" href="../../index.html">
+                    <span class="color-60 padding-5 round-medium">HQ Multimedia</span>
+                </a>
+            </div>
+            <div class="col-7 col-sm-7 col-md-9">
+                <header>
+                    <nav class=" right-end ">
+                        <ul class="ul-one-page">
+                            <li><a href="../Home.html" class="uppercase text-color-60-contrast">Home</a></li>
+                            <li><a href="../03.HQ-Jquery-plugin/HQ-JS-Plugin.html" class="uppercase text-color-60-contrast hover-text-color-60-contrast active">HQ Jquery Plugin</a></li>
+
+
+
+                            <li><a class=" cursor uppercase btn-menu text-color-60-contrast">All-Menu <ion-icon style="color: #ffc107 ;"  class="padding-l-5" name="logo-youtube"></ion-icon></a></li>
+
+                            <li><a href="" class="uppercase text-color-60-contrast">Login <i style="color: #ffc107 ;" class="fas fa-sign-in-alt"></i></a></li>
+
+
+                        </ul>
+                        <ul class="ul-one-page large-hidden-small-show">
+
+                            <li><a onclick="openSideFull2()" class=" cursor uppercase" style="color:white;">Liên kết <ion-icon style="font-size: 17px;" name="link-outline"></ion-icon></a></li>
+
+
+
+                        </ul>
+
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+    </div>
+    <!-- end menu link -->
+    <!-- menu all -->
+    <div class="container-fluid menu-all-data color-30 padding-b-30 ">
+
+        <div class="row">
+            <div class="col-12 text-color-10 hover-text-color-60 right-end margin-t-15">
+                <i style="font-size: 25px;" class=" btn-menu btn-close-all-menu cursor fas fa-window-close"></i>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../02.HQ-Jquery/HQ-JS-Preview.html">
+                    <h6 class="hover-color-60 color-10 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ Jquery</h6>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../01.Project-HQcss/page-learn/learn-index.html">
+                    <h6 class="hover-color-60 color-10 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ-CSS Learn</h6>
+                </a>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../01.Project-HQcss/page-demo/template-index.html">
+                    <h6 class="hover-color-60 color-10 color-menu-all margin-b-5 padding-5 round-medium text-center">HQ-CSS Template</h6>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-4 col-lg-3 margin-t-15">
+                <a class="text-color-10-contrast " href="../04.Codeigniter-3.x/Codeigniter-Home.html">
+                    <h6 class="hover-color-60 color-10 color-menu-all margin-b-5 padding-5 round-medium text-center">Codegniter-3.x</h6>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- end menu all -->
+    <!-- side bar -->
+    <div id="SidePush" class="sidenav" style="z-index: 9999;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidePush()"><i class="  fas fa-window-close"></i></a>
+        <ul class="side_bar">
+            <li>
+                <a class=" link_one_page  hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor" style="font-size: 17px;">01.Table Pagination-Filter</a>
+            </li>
+            <li>
+                <a class="link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor" style="font-size: 17px;">02.Filter Option</a>
+            </li>
+            <li>
+                <a class="link_one_page hover-color-10 text-color-60-contrast hover-text-color-60-contrast cursor" style="font-size: 17px;">03.Upload file style 1</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="button-side-bar text-color-60-contrast hover-text-color-10">
+        <span style="width: 100% ; font-size: 25px;" class="cursor   " onclick="openSidePush()"><i class="fas fa-caret-square-down"></i></span>
+    </div>
+
+
+    <!-- back to top -->
+    <div class="backtotop bottom-right color-10 text-color-10-contrast" style="right: 10px;bottom:10px;">
+        <p class="button-ToTop">Back to top</p>
+    </div>
+
+    <!-- slide -->
+    <div class="slide img-background" style=" background-position:bottom center; position: relative; min-height: 100vh; background-image: url(img/slide/slide06.jpg);">
+        <!-- <div class="box-about round-medium">
+            <p><span class="text-color-10 color-60 padding-5 round-medium">HQ.css và HQ.js</span> được phát triển bởi <span class="text-color-60-contrast color-60 round-medium padding-5">HQ-Multimedia</span> là file hỗ trợ nhanh trong lập trình Front-End
+                website,file được viết sẵn các cấu trúc js và css kết hợp với nhiều plugin sẵn có như : <span class="text-color-10">bootstrap,video-js,animate,isotope...</span> tuỳ vào file thiết kế thực tế có thể tuỳ chỉnh dự án theo phương pháp bộ select
+                css với <span class="text-color-10 color-60 padding-5 round-medium">settingProject.css</span>
+                <br> Với mong muốn việc làm web trở nên nhanh chóng chỉ cần copy-paste và thay đổi các class</p>
+        </div> -->
+    </div>
+
+
+    <!-- content -->
+
+    <div class="box-content">
+
+        <!-- 01.Table pagination - Filter -->
+        <div class="content_items_1 margin-b-15">
+            <!-- TITLE -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 reset-col ">
+                        <h6 class="text-center padding-tb-15 bg-items">01.Table pagination - Filter</h6>
+                        <p class="text-center margin-t-15">Nhập dữ liệu vào Form để thấy sự thay đổi của table</p>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- CODE -->
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 ">
+
+                        <div style="margin: auto;">
+                            <div class="box_scroll border-top">
+                                <h6 class=" scroll_title margin-tb-15 padding-l-15 padding-tb-5" style="width: 125px;"> <i class="fas fa-caret-square-down"></i> Filter Data</h6>
+                                <div class="scroll_content ">
+
+
+                                    <div class="col-12 margin-t-5">
+                                        <label for="exampleInputEmail1">Lọc tất cả:</label>
+                                        <input type="text" class="myInput" onkeyup="searchTable(this.value, 'list')" placeholder="Search full table..." title="Search">
+                                        <label for="exampleInputEmail1">Lọc theo Menu:</label>
+
+                                        <input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 1)" placeholder="Search firstnames..." title="Search">
+                                        <label for="exampleInputEmail1">Lọc theo Category:</label>
+
+                                        <input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 2)" placeholder="Search lastnames..." title="Search">
+                                        <label for="exampleInputEmail1">Lọc theo Document:</label>
+
+                                        <input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 3)" placeholder="Search emails..." title="Search">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1">Số tin hiển thị: </label>
+
+                                        <div class="form-group">
+                                            <!--		Show Numbers Of Rows 		-->
+                                            <select class="form-control" name="state" id="maxRows">
+                                                 <option value="5000">Show ALL Rows</option>
+                                                 <option value="5">5</option>
+                                                 <option value="10">10</option>
+                                                 <option value="15">15</option>
+                                                 <option value="20">20</option>
+                                                 <option value="50">50</option>
+                                                 <option value="70">70</option>
+                                                 <option value="100">100</option>
+                                                </select>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- end sroll -->
+
+                </div>
+                <table class="table table-striped table-class" id="list">
+                    <thead class="color-10 text-color-10-contrast">
+                        <tr>
+                            <th>Menu</th>
+                            <th>Category</th>
+                            <th>Document</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thiết kế web</td>
+                            <td>Codeigniter</td>
+                            <td>Cách thêm dữ liệu</td>
+                        </tr>
+                        <tr>
+                            <td>thiết kế web</td>
+                            <td>Codeigniter</td>
+                            <td>Cách xoá dữ liệu</td>
+                        </tr>
+                        <tr>
+                            <td>Dựng phim</td>
+                            <td>Premiere</td>
+                            <td>Cách cắt video</td>
+                        </tr>
+                        <tr>
+                            <td>3D</td>
+                            <td>3Ds Max</td>
+                            <td>Các bước chuẩn bị cho dự án </td>
+                        </tr>
+                        <tr>
+                            <td>Kỹ xảo</td>
+                            <td>After Effect</td>
+                            <td>Setup dự án</td>
+                        </tr>
+                        <tr>
+                            <td>Thiết kế web</td>
+                            <td>Codeigniter</td>
+                            <td>Cách update dữ liệu</td>
+                        </tr>
+                        <tr>
+                            <td>Photoshop</td>
+                            <td>Thiết kế Poster</td>
+                            <td>Các bố cục,màu sắc hay dùng trong poster</td>
+                        </tr>
+                        <tr>
+                            <td>Xử lý ảnh</td>
+                            <td>Camera Raw</td>
+                            <td>Cách bước thiết lập dự án</td>
+                        </tr>
+                        <tr>
+                            <td>Tạp chí</td>
+                            <td>Indesgn</td>
+                            <td>Setup dự án</td>
+                        </tr>
+                        <tr>
+                            <td>Xử lý ảnh</td>
+                            <td>Lightroom</td>
+                            <td>Cách fake màu theo chủ ý</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!--Start Pagination -->
+                <div class='pagination-container'>
+                    <nav>
+                        <ul class="pagination">
+                            <li data-page="prev">
+                                <span> Previous <span class="sr-only">(current)</span></span>
+                            </li>
+
+                            <li data-page="next" id="prev">
+                                <span> Next <span class="sr-only">(current)</span></span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <!-- END CODE -->
+
+            <!-- COPY/DOWNLOAD CODE -->
+            <div class="center ">
+                <h6 class=" text-center margin-tb-15 padding-5 round-medium" style="width:120px ; background-color: #ffc107 ;"><i class="fas fa-file-code"></i> View Code</h6>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 reset-col border-bottom " style="background-color: #111111db;">
+                        <ul>
+                            <li class="active items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Jquery/css</li>
+                            <li class="items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Jquery css liên quan</li>
+                            <li class="items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Html</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row relative">
+
+                    <div class="col-12 items_content padding-15 active" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+                        <!-- paste code js css -->
+                        <div><span style="color: #cccccc; ">&lt;!-- Js Pagination ajax table --&gt;</span></div>
+                        <div><span style="color: #cccccc; ">&lt;<span style="color: #e2777a; ">link rel="stylesheet " href="</span><span style="color: #72c994;">vendor/filter-table/css/fix-pagination-boostrap-3.3.6.css</span><span style="color: #e2777a;">"</span>&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&lt;<span style="color: #e2777a;">script type="text/javascript" src="</span><span style="color: #72c994;">vendor/filter-table/js/table-pagination.js"<span style="color: #cccccc;">&gt;</span>
+                            <span style="color: #cccccc;">&lt;<span style="color: #e2777a;">/script</span>&gt;</span>
+                            </span>
+                            </span>
+                        </div>
+                        <div><span style="color: #cccccc;">&lt;<span style="color: #e2777a;">script type="text/javascript"</span>&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp;<span style="color: #72c994;"> getPagination('#list');</span></span>
+                        </div>
+                        <div><span style="color: #cccccc;">&lt;<span style="color: #e2777a;">/script</span>&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&lt;!-- end js Pagination ajax table --&gt;</span></div>
+                        <div><span style="color: #cccccc;">&lt;!-- js &nbsp;lọc c&aacute;c trường dữ liệu--&gt;</span></div>
+                        <div><span style="color: #cccccc;">&lt;<span style="color: #e2777a;">script src="</span><span style="color: #72c994;">vendor/filter-table/js/tablesearch.js</span><span style="color: #e2777a;">"</span>&gt;&lt;<span style="color: #e2777a;">/script</span>&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&lt;!-- end js lọc c&aacute;c trường dữ liệu--&gt;</span></div>
+
+
+
+
+                    </div>
+                    <div class="col-12 padding-15 items_content" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+
+                        <!-- paste js liên quan -->
+                        <div>
+                            <div>
+                                <div>
+                                    <div><span style="color: #cccccc; ">&nbsp;<span style="color: #fbeeb8; ">&lt;!-- HQ css --&gt;</span></span>
+                                    </div>
+                                    <div><span style="color: #cccccc; ">&nbsp; &nbsp; &lt;link rel="stylesheet " href="<span style="color: #72c994;">css/hqcss-ver-1.9.css</span>"&gt;</span>
+                                    </div>
+                                    <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">css/settingProject-System.css</span>"&gt;</span>
+                                    </div>
+                                    <div>&nbsp;</div>
+                                </div>
+                            </div>
+                            <div><span style="color: #fbeeb8;">&lt;!-- HQ jquery --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&lt;link rel="stylesheet" href="<span style="color: #72c994;">css/hq-js-ver-1.9.css</span>"&gt;</span>
+                            </div>
+                            <div><span style="color: #cccccc;">&lt;script src="<span style="color: #72c994;">js/hq-js-ver-1.9.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <div><span style="color: #cccccc;">&lt;link rel="stylesheet" href="<span style="color: #72c994;">css/hq-js-setting-project.css</span>"&gt;</span>
+                            </div>
+                        </div>
+                        <div><span style="color: #cccccc;"><span style="color: #fbeeb8;">&lt;!-- bootstrap 5 --&gt;</span></span>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/jquery.min.js</span>"&gt;&lt;/script&gt;</span>
+                        </div>
+                        <p><br /><br /></p>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/popper.min.js</span>"&gt;&lt;/script&gt;</span>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/bootstrap.min.js</span>"&gt;&lt;/script&gt;</span>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css</span>"&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&nbsp;</span></div>
+                        <div><span style="color: #fbeeb8;">&lt;!-- gọi h&agrave;m trong hq-jquery --&gt;</span></div>
+                        <div>
+                            <div><span style="color: #cccccc;">&lt;script&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; <span style="color: #72c994;">&nbsp; scrollBox();</span></span>
+                            </div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp;</span></div>
+                            <div><span style="color: #cccccc;">&lt;/script&gt;<br /></span></div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-12  padding-15 items_content" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+                        <!-- paste html -->
+                        <div>
+                            <div><span style="color: #cccccc;">&lt;div class="container"&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="row"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-12 "&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div style="margin: auto;"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="box_scroll border-top"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h6 class=" scroll_title margin-tb-15 padding-l-15 padding-tb-5" style="width: 125px;"&gt; &lt;i class="fas fa-caret-square-down"&gt;&lt;/i&gt; Filter Data&lt;/h6&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="scroll_content "&gt;</span></div>
+                            <br /><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-12 margin-t-5"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label for="exampleInputEmail1"&gt;Lọc tất cả:&lt;/label&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" class="myInput" onkeyup="searchTable(this.value, 'list')" placeholder="Search full table..." title="Search"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label for="exampleInputEmail1"&gt;Lọc theo Menu:&lt;/label&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 1)" placeholder="Search firstnames..." title="Search"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label for="exampleInputEmail1"&gt;Lọc theo Category:&lt;/label&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 2)" placeholder="Search lastnames..." title="Search"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label for="exampleInputEmail1"&gt;Lọc theo Document:&lt;/label&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" class="myInput" onkeyup="searchTable(this.value, 'list', 3)" placeholder="Search emails..." title="Search"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-12"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label for="exampleInputEmail1"&gt;Số tin hiển thị: &lt;/label&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- &nbsp; &nbsp; &nbsp; &nbsp;Show Numbers Of Rows &nbsp; &nbsp; &nbsp; &nbsp;--&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;select class="form-control" name="state" id="maxRows"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="5000"&gt;Show ALL Rows&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="5"&gt;5&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="10"&gt;10&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="15"&gt;15&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="20"&gt;20&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="50"&gt;50&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="70"&gt;70&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;option value="100"&gt;100&lt;/option&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/select&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <br /><br /><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <br /><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- end sroll --&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;table class="table table-striped table-class" id="list"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;thead class="color-10 text-color-10-contrast"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;th&gt;Menu&lt;/th&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;th&gt;Category&lt;/th&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;th&gt;Document&lt;/th&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/thead&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tbody&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Thiết kế web&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Codeigniter&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;ch th&ecirc;m dữ liệu&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;thiết kế web&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Codeigniter&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;ch xo&aacute; dữ liệu&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Dựng phim&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Premiere&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;ch cắt video&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;3D&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;3Ds Max&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;c bước chuẩn bị cho dự &aacute;n &lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Kỹ xảo&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;After Effect&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Setup dự &aacute;n&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Thiết kế web&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Codeigniter&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;ch update dữ liệu&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Photoshop&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Thiết kế Poster&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;c bố cục,m&agrave;u sắc hay d&ugrave;ng trong poster&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Xử l&yacute; ảnh&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Camera Raw&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;ch bước thiết lập dự &aacute;n&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Tạp ch&iacute;&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Indesgn&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Setup dự &aacute;n&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;tr&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Xử l&yacute; ảnh&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Lightroom&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;C&aacute;ch fake m&agrave;u theo chủ &yacute;&lt;/td&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tr&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/tbody&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/table&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!--Start Pagination --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class='pagination-container'&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;nav&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class="pagination"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li data-page="prev"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt; Previous &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/span&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li data-page="next" id="prev"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt; Next &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/span&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/li&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/nav&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;/div&gt;</span></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--End COPY/DOWNLOAD CODE -->
+
+        </div>
+        <!--End 01.Table pagination - Filter -->
+
+        <!-- 02.Filter Option -->
+        <div class=" content_items_2 ">
+            <!-- TITLE -->
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-12 reset-col margin-b-15">
+                        <h6 class="text-center padding-tb-15 bg-items2">02.Filter Option</h6>
+                        <p class="text-center margin-t-15">Nhập thử dữ liệu vào thẻ input để thấy sự thay đổi</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- CODE -->
+            <div class="container">
+
+                <div class="row margin-t-15">
+
+
+                    <div class="col-12">
+                        <label class="form-label">Filter Basic</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nhập tên danh mục" list="list-timezone" id="input-datalist">
+                            <datalist id="list-timezone">
+            <option>Việt Nam</option>
+            <option>Thiết kế web</option>
+            <option>Dựng phim</option>
+            <option>Kỹ xảo</option>
+            <option>Tạp chí</option>
+            <option>Chỉnh ảnh</option>
+            <option>Poster</option>
+            <option>3D Nội ngoại thất</option>
+           
+           
+        </datalist>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Filter Json</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Timezone" id="input-prefetch" data-prefetch="data.json">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END CODE -->
+            <!-- COPY/DOWNLOAD CODE -->
+            <div class="center ">
+                <h6 class=" text-center margin-tb-15 padding-5 round-medium" style="width:120px ; background-color: #ffc107 ;"><i class="fas fa-file-code"></i> View Code</h6>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 reset-col border-bottom " style="background-color: #111111db;">
+                        <ul>
+                            <li class="active items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Jquery/css</li>
+                            <li class="items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Jquery css liên quan</li>
+                            <li class="items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Html</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row relative">
+
+                    <div class="col-12 items_content padding-15 active" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+                        <!-- paste code js css -->
+                        <div>
+                            <div><span style="color: #fbeeb8;">&lt;!-- js filter --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&lt;script src="<span style="color: #72c994;">vendor/Filter_option/js/bootstrap-autocomplete.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <div><span style="color: #cccccc;">&lt;script&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; <span style="color: #72c994;">&nbsp; $('#input-datalist').autocomplete();</span></span>
+                            </div>
+                            <div><span style="color: #72c994;">&nbsp; &nbsp; $('#input-prefetch').autocomplete()</span></div>
+                            <div><span style="color: #cccccc;">&lt;/script&gt;</span></div>
+                            <br />
+                            <div><span style="color: #fbeeb8;">&lt;!-- end js filter --&gt;</span></div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 padding-15 items_content" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+
+                        <!-- paste js liên quan -->
+                        <div><span style="color: #fbeeb8;">&lt;!-- HQ css --&gt;</span></div>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">css/hqcss-ver-1.9.css</span>"&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">css/settingProject-System.css</span>"&gt;</span>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div><span style="color: #fbeeb8;">&lt;!-- bootstrap 5 --&gt;</span></div>
+                        <div><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/jquery.min.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <br /><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/popper.min.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/bootstrap.min.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css</span>"&gt;</span>
+                            </div>
+                        </div>
+                        <p><br /><br /></p>
+
+
+
+                    </div>
+                    <div class="col-12  padding-15 items_content" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+                        <!-- paste html -->
+                        <div>
+                            <div>
+                                <div><span style="color: #cccccc;">&nbsp;&lt;div class="container"&gt;</span></div>
+                                <br />
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="row margin-t-15"&gt;</span></div>
+                                <br /><br />
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-12"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label class="form-label"&gt;Filter Basic&lt;/label&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" class="form-control" placeholder="Nhập t&ecirc;n danh mục" list="list-timezone" id="input-datalist"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;datalist id="list-timezone"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Việt Nam&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Thiết kế web&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Dựng phim&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Kỹ xảo&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Tạp ch&iacute;&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Chỉnh ảnh&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;Poster&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option&gt;3D Nội ngoại thất&lt;/option&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/datalist&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                                <br />
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="col-12"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;label class="form-label"&gt;Filter Json&lt;/label&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" class="form-control" placeholder="Timezone" id="input-prefetch" data-prefetch="data.json"&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                                <br />
+                                <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--End COPY/DOWNLOAD CODE -->
+        </div>
+        <!--02.End Filter Option-->
+
+        <!-- 03.Upload file style 1 -->
+        <div class="content_items_3">
+            <!-- TITLE -->
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-12 margin-tb-15 reset-col">
+                        <h6 class="text-center padding-tb-15 bg-items3">03.Upload file style 1</h6>
+                        <p class="text-center margin-t-15">Chọn file upload để trải nghiệm. </p>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- CODE -->
+            <div class="container padding-15 round-medium" style="background-color: #919191;">
+
+                <!-- One file -->
+                <h4 class="text-color-60-contrast margin-b-15 ">One Image Preview</h4>
+                <form method="post" action="#" class="mb-0">
+                    <div class="form-group">
+                        <input type="file" name="demo-2" id="demo-2">
+                    </div>
+                    <div class="form-group mb-0">
+                        <button type="submit" class="btn btn-primary">Upload</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+                <!-- end One file -->
+
+                <!-- multiple files -->
+                <h4 class="text-color-60-contrast margin-tb-15 ">Multiple Files</h4>
+                <form method="post" action="#" class="mb-0">
+                    <div class="form-group">
+                        <input type="file" name="demo-4" id="demo-4" multiple>
+                    </div>
+                    <div class="form-group mb-0">
+                        <button type="submit" class="btn btn-primary">Upload</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+
+                <!--end multiple files -->
+            </div>
+
+            <!-- END CODE -->
+
+            <!-- COPY/DOWNLOAD CODE -->
+            <div class="center ">
+                <h6 class=" text-center margin-tb-15 padding-5 round-medium" style="width:120px ; background-color: #ffc107 ;"><i class="fas fa-file-code"></i> View Code</h6>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 reset-col border-bottom " style="background-color: #111111db;">
+                        <ul>
+                            <li class="active items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Jquery/css</li>
+                            <li class="items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Jquery css liên quan</li>
+                            <li class="items_thumb text-center hover-color-10 padding-tb-10 text-color-60-contrast ">Html</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row relative">
+
+                    <div class="col-12 items_content padding-15 active" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+                        <!-- paste code js css -->
+                        <div>
+                            <div>
+                                <div>
+                                    <div><span style="color: #fbeeb8;">&lt;!-- bs-dropzone --&gt;</span></div>
+                                    <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">vendor/bs-dropzone/css/bs-dropzone.css</span>"&gt;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div><span style="color: #fbeeb8;">&lt;!-- upload file bs-dropzone --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&lt;script src="<span style="color: #72c994;">vendor/bs-dropzone/js/bs-dropzone.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <div><span style="color: #cccccc;">&lt;script&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp;<span style="color: #72c994;"> $('#demo-2').bs_dropzone</span>({</span>
+                            </div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; preview: true</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; });</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; <span style="color: #72c994;">$('#demo-4').bs_dropzone</span>({</span>
+                            </div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; preview: true,</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; accepted: ['jpg', 'jpeg', 'png'],</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; dropzoneTemplate: '&lt;div class="bs-dropzone"&gt;&lt;div class="bs-dropzone-area"&gt;&lt;/div&gt;&lt;div class="bs-dropzone-message"&gt;&lt;/div&gt;&lt;div class="bs-dropzone-preview mt-0"&gt;&lt;/div&gt;&lt;/div&gt;',</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; parentTemplate: '&lt;div class="row ml-0 justify-content-center align-items-center"&gt;&lt;/div&gt;',</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; childTemplate: '&lt;div class="col-4 col-md-3 pl-0"&gt;&lt;/div&gt;',</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; imageClass: 'img-fluid mt-3 rounded'</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; });</span></div>
+                            <div><span style="color: #cccccc;">&lt;/script&gt;</span></div>
+                            <div><span style="color: #fbeeb8;">&lt;!-- end upload file bs-dropzone --&gt;</span></div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 padding-15 items_content" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+
+                        <!-- paste js liên quan -->
+                        <div><span style="color: #fbeeb8;">&lt;!-- HQ css --&gt;</span></div>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">css/hqcss-ver-1.9.css</span>"&gt;</span>
+                        </div>
+                        <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">css/settingProject-System.css</span>"&gt;</span>
+                        </div>
+                        <div>&nbsp;</div>
+                        <div><span style="color: #fbeeb8;">&lt;!-- bootstrap 5 --&gt;</span></div>
+                        <div><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/jquery.min.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <br /><br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/popper.min.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;script src="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/js/bootstrap.min.js</span>"&gt;&lt;/script&gt;</span>
+                            </div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;link rel="stylesheet" href="<span style="color: #72c994;">vendor/Bootstrap-w3schools.com/css/bootstrap-5.min.css</span>"&gt;</span>
+                            </div>
+                        </div>
+                        <p><br /><br /></p>
+
+
+
+
+
+                    </div>
+                    <div class="col-12  padding-15 items_content" style="overflow: scroll; height: 390px; background-color: #2d2d2d;">
+                        <!-- paste html -->
+                        <div>
+                            <div><span style="color: #cccccc;">&nbsp; &lt;div class="container padding-15 round-medium" style="background-color: #919191;"&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- One file --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-color-60-contrast"&gt;One Image Preview&lt;/h2&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;form method="post" action="#" class="mb-0"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="file" name="demo-2" id="demo-2"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group mb-0"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type="submit" class="btn btn-primary"&gt;Upload&lt;/button&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type="reset" class="btn btn-secondary"&gt;Reset&lt;/button&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/form&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- end One file --&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- multiple Files --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-color-60-contrast"&gt;Multiple Files&lt;/h2&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;form method="post" action="#" class="mb-0"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="file" name="demo-4" id="demo-4" multiple&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="form-group mb-0"&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type="submit" class="btn btn-primary"&gt;Upload&lt;/button&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type="reset" class="btn btn-secondary"&gt;Reset&lt;/button&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/form&gt;</span></div>
+                            <br />
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &nbsp; &nbsp; &lt;!--end multiple files --&gt;</span></div>
+                            <div><span style="color: #cccccc;">&nbsp; &nbsp; &lt;/div&gt;</span></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--End COPY/DOWNLOAD CODE -->
+
+        </div>
+        <!--End 03.Upload file style 1 -->
+    </div>
+
+    <!-- end content -->
+
+
+</body>
+<!-- HQ jquery -->
+<link rel="stylesheet" href="css/hq-js-ver-1.9.css">
+<script src="js/hq-js-ver-1.9.js"></script>
+<link rel="stylesheet" href="css/hq-js-setting-project.css">
+
+
+<!-- gọi hàm trong hq-jquery -->
+<script>
+    // OnePage();
+    tab_box_final();
+    // SrcollAddClass();
+    MenuTransform();
+    modal_box();
+    mansory_edit();
+    FancyBox_No_effect();
+    scrollBox();
+    hideShow_box();
+    LoadMore();
+    Filter();
+    search_filter();
+    Wow_js();
+    slideOWL();
+</script>
+<script>
+    // one page
+    $(document).ready(function() {
+        // console.log($('.chapter1').offset().top);
+        $('.sidenav ul li:nth-child(1) a').on('click', function(event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: $('.bg-items').offset().top
+            }, 1000);
+            $('.link_one_page').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // click menu 2
+        $('.sidenav ul li:nth-child(2) a').on('click', function(event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: $('.bg-items2').offset().top
+            }, 1000);
+            $('.link_one_page').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // click menu 3
+
+        $('.sidenav ul li:nth-child(3) a').on('click', function(event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: $('.bg-items3').offset().top
+            }, 1000);
+            $('.link_one_page').removeClass('active');
+            $(this).addClass('active');
+        });
+        // // click menu 4
+
+        // $('.sidenav ul li:nth-child(4) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items4').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 5
+
+        // $('.sidenav ul li:nth-child(5) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items5').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 6
+
+        // $('.sidenav ul li:nth-child(6) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items6').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 7
+
+        // $('.sidenav ul li:nth-child(7) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items7').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 8
+
+        // $('.sidenav ul li:nth-child(8) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items8').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 9
+
+        // $('.sidenav ul li:nth-child(9) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items9').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 10
+
+        // $('.sidenav ul li:nth-child(10) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items10').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 11
+
+        // $('.sidenav ul li:nth-child(11) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items11').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 12
+
+        // $('.sidenav ul li:nth-child(12) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items12').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 13
+
+        // $('.sidenav ul li:nth-child(13) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items13').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        // // click menu 14
+
+        // $('.sidenav ul li:nth-child(14) a').on('click', function(event) {
+        //     event.preventDefault();
+        //     $('body,html').animate({
+        //         scrollTop: $('.bg-items14').offset().top
+        //     }, 1000);
+        //     $('.link_one_page').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+
+
+
+
+
+
+
+
+
+
+
+    });
+    // end one page
+
+    $(document).ready(function() {
+
+        var vitrimenu = $('.content_items_1').offset().top;
+        var vitrimenu2 = $('.content_items_2').offset().top;
+        var vitrimenu3 = $('.content_items_3').offset().top;
+        // var vitrimenu4 = $('.content_items_4').offset().top;
+        // var vitrimenu5 = $('.content_items_5').offset().top;
+        // var vitrimenu6 = $('.content_items_6').offset().top;
+        // var vitrimenu7 = $('.content_items_7').offset().top;
+        // var vitrimenu8 = $('.content_items_8').offset().top;
+        // var vitrimenu9 = $('.content_items_9').offset().top;
+        // var vitrimenu10 = $('.content_items_10').offset().top;
+        // var vitrimenu11 = $('.content_items_11').offset().top;
+        // var vitrimenu12 = $('.content_items_12').offset().top;
+
+
+
+        console.log(vitrimenu2);
+        $(window).scroll(function(event) {
+            /* Act on the event */
+            var vitribody = $('body,html').scrollTop();
+
+            // content-1
+            if (vitribody >= vitrimenu) {
+                $('.bg-items').addClass('bg-scroll animate-left');
+                $('.button-side-bar').addClass('active animate-top');
+                //code cho side bar
+                $('.link_one_page').removeClass('active');
+                $('ul.side_bar li:nth-child(1) a').addClass('active');
+
+                // $(this).addClass('active');
+                $('.boxMenuSystem').removeClass('bg-scroll');
+            } else {
+                $('.bg-items').removeClass('bg-scroll animate-left');
+                $('.button-side-bar').removeClass('active animate-top');
+
+            }
+            // content-2
+            if (vitribody >= vitrimenu2) {
+                $('.bg-items2').addClass('bg-scroll animate-left');
+                $('.bg-items').removeClass('bg-scroll animate-left');
+                // viết cho side bar
+                $('.link_one_page').removeClass('active');
+                $('ul.side_bar li:nth-child(2) a').addClass('active');
+
+            } else {
+                $('.bg-items2').removeClass('bg-scroll animate-left');
+            }
+            // content-3
+            if (vitribody >= vitrimenu3) {
+                $('.bg-items3').addClass('bg-scroll animate-left');
+                $('.bg-items2').removeClass('bg-scroll animate-left');
+                // viết cho side bar
+                $('.link_one_page').removeClass('active');
+                $('ul.side_bar li:nth-child(3) a').addClass('active');
+
+            } else {
+                $('.bg-items3').removeClass('bg-scroll animate-left');
+            }
+            // // content-4
+            // if (vitribody >= vitrimenu4) {
+            //     $('.bg-items4').addClass('bg-scroll animate-left');
+            //     $('.bg-items3').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(4) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items4').removeClass('bg-scroll animate-left');
+            // }
+            // // content-5
+            // if (vitribody >= vitrimenu5) {
+            //     $('.bg-items5').addClass('bg-scroll animate-left');
+            //     $('.bg-items4').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(5) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items5').removeClass('bg-scroll animate-left');
+            // }
+            // // content-6
+            // if (vitribody >= vitrimenu6) {
+            //     $('.bg-items6').addClass('bg-scroll animate-left');
+            //     $('.bg-items5').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(6) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items6').removeClass('bg-scroll animate-left');
+            // }
+            // // content-7
+            // if (vitribody >= vitrimenu7) {
+            //     $('.bg-items7').addClass('bg-scroll animate-left');
+            //     $('.bg-items6').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(7) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items7').removeClass('bg-scroll animate-left');
+            // }
+            // // content-8
+            // if (vitribody >= vitrimenu8) {
+            //     $('.bg-items8').addClass('bg-scroll animate-left');
+            //     $('.bg-items7').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(8) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items8').removeClass('bg-scroll animate-left');
+            // }
+            // // content-9
+            // if (vitribody >= vitrimenu9) {
+            //     $('.bg-items9').addClass('bg-scroll animate-left');
+            //     $('.bg-items8').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(9) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items9').removeClass('bg-scroll animate-left');
+            // }
+            // // content-10
+            // if (vitribody >= vitrimenu10) {
+            //     $('.bg-items10').addClass('bg-scroll animate-left');
+            //     $('.bg-items9').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(10) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items10').removeClass('bg-scroll animate-left');
+            // }
+            // // content-11
+            // if (vitribody >= vitrimenu11) {
+            //     $('.bg-items11').addClass('bg-scroll animate-left');
+            //     $('.bg-items10').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(11) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items11').removeClass('bg-scroll animate-left');
+            // }
+            // // content-12
+            // if (vitribody >= vitrimenu12) {
+            //     $('.bg-items12').addClass('bg-scroll animate-left');
+            //     $('.bg-items11').removeClass('bg-scroll animate-left');
+            //     // viết cho side bar
+            //     $('.link_one_page').removeClass('active');
+            //     $('ul.side_bar li:nth-child(12) a').addClass('active');
+
+            // } else {
+            //     $('.bg-items12').removeClass('bg-scroll animate-left');
+            // }
+
+
+
+
+        });
+
+
+
+    });
+</script>
+<script>
+    $('.scroll_content_view_code').slideUp(0);
+
+    $('.scroll_title_view_code').click(function() {
+
+        $(this).next('.scroll_content_view_code').slideToggle();
+
+        $(this).toggleClass('hoverColor_view_code');
+    });
+</script>
+
+<!-- <script>
+    $(function() {
+        $('.content_mansory').isotope({
+            itemSelector: '.box_mansory'
+        });
+    });
+</script> -->
+
+
+<!-- Js Pagination ajax table -->
+<link rel="stylesheet" href="vendor/filter-table/css/fix-pagination-boostrap-3.3.6.css">
+<script type="text/javascript" src="vendor/filter-table/js/table-pagination.js"></script>
+<script type="text/javascript">
+    getPagination('#list');
+</script>
+<!-- end js Pagination ajax table -->
+<!-- js  lọc các trường dữ liệu-->
+<script src="vendor/filter-table/js/tablesearch.js"></script>
+<!-- end js lọc các trường dữ liệu-->
+
+
+<!-- js filter -->
+<script src="vendor/Filter_option/js/bootstrap-autocomplete.js"></script>
+<script>
+    $('#input-datalist').autocomplete();
+    $('#input-prefetch').autocomplete()
+</script>
+<!-- W3 tabs -->
+<script>
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-tabs", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-tabs";
+    }
+</script>
+<!-- end W3 tabs -->
+
+<!-- upload file bs-dropzone -->
+<script src="vendor/bs-dropzone/js/bs-dropzone.js"></script>
+<script>
+    $('#demo-2').bs_dropzone({
+        preview: true
+    });
+
+    $('#demo-4').bs_dropzone({
+        preview: true,
+        accepted: ['jpg', 'jpeg', 'png'],
+        dropzoneTemplate: '<div class="bs-dropzone"><div class="bs-dropzone-area"></div><div class="bs-dropzone-message"></div><div class="bs-dropzone-preview mt-0"></div></div>',
+        parentTemplate: '<div class="row ml-0 justify-content-center align-items-center"></div>',
+        childTemplate: '<div class="col-4 col-md-3 pl-0"></div>',
+        imageClass: 'img-fluid mt-3 rounded'
+    });
+</script>
+<!-- end upload file bs-dropzone -->
+
+<!-- js menu all -->
+<script>
+    $(document).ready(function() {
+
+        $('.btn-menu').click(function(e) {
+            $('.menu-all-data').toggleClass('in-top');
+            $('.box-search').toggleClass('show');
+        });
+
+
+    });
+</script>
+<!-- end js menu all -->
+
+</html>
