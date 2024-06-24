@@ -1,0 +1,92 @@
+<!--01.Khối setting-view-source (thay đổi url theo dự án) -->
+<div ng-show="!setting_source" ng-model="page_data" ng-init="page_data='posts'" ng-include="'content-admin-panel/page-components/all-posts/setting-source-posts.html'" scope="" onload=""></div>
+<!--01.End khối setting-view-source -->
+
+<!-- 02. Khối view dữ liệu đã xoá   -->
+<div class="container-fluid reset-col">
+    <div class="row" ng-init="getDataBoxTrash(page_data)">
+        <div class="col-12 reset-col">
+            <a onclick="document.getElementById('id02').style.display='block'" style="color: #007bff; " href=""><i class="fa-solid fa-trash"></i> Thùng rác ({{data_get_box_trash.length}})</a>
+        </div>
+
+        <!--02-01. Table load posts box trash (thay đổi url theo dự án) -->
+        <div class="col-12 reset-col" ng-include="'content-admin-panel/page-components/all-posts/modal-view-posts-box-trash.html'" scope="" onload=""></div>
+        <!--02-01. End table load posts box trash -->
+    </div>
+</div>
+<!-- 02. End khối view dữ liệu đã xoá   -->
+<!--03.thông báo khi ko có dữ liệu (thay đổi url theo dự án) -->
+<div class="container-fulid" ng-if="data_get == '';">
+    <div class="row" ng-include="'content-admin-panel/general-ingredients/view-notification/notification_nodata.html'" scope="" onload=""></div>
+</div>
+<!-- 03. End thông báo khi ko có dữ liệu -->
+<!-- 04.Khối hiển thị dữ liệu -->
+
+
+<div class="container-fluid margin-t-15 reset-col" ng-if="data_get != '';">
+
+    <div class="row " ng-controller="checkBoxController">
+        <div class="col-12 col-md-7 reset-col margin-b-15 ">
+            <!-- 04-01 Khối checkbox và action -->
+            <form novalidate name="form_option" class="flex align-items-center">
+                <!-- check box chọn tất cả -->
+                <div class="form-check margin-r-15">
+                    <input class="form-check-input" type="checkbox" value="" ng-model="selectAll" ng-click="checkAll()" name="check_all" id="check_all">
+                    <label class="form-check-label" for="flexCheckDefault">
+                          Chọn tất cả <span>({{selected.length}} item)</span>
+                        </label>
+
+                </div>
+                <!-- 04.1 End check box chọn tất cả -->
+
+                <!-- selected option -->
+                <select ng-model="optionCheckBox" name="option_act" class="text-left margin-r-15 form-select form-control form-sm" style="width: auto;" required>
+                        <option value="" disabled selected>-- Hành động --</option>
+                        <option value="move-to-trash">Xoá dữ liệu</option>
+                        <option value="hidden">Ẩn dữ liệu</option>
+                        <option value="show">Hiển thị dữ liệu</option>
+                        <option value="confirmation">Duyệt dữ liệu</option>
+                        
+                        <option value="considered">Từ chối duyệt</option>
+                        
+                    </select>
+                <!-- End selected option -->
+                <!-- Button -->
+                <button ng-disabled="form_option.$invalid" ng-model="option_function" ng-click="option_act(optionCheckBox,page_data)" class="btn btn-primary btn-sm"><span>Thực hiện</span></button>
+                <!-- end button -->
+            </form>
+            <!-- 04-01 End khối checkbox và action -->
+
+
+        </div>
+        <!--04-02.thanh search -->
+
+        <div class="col-12 col-md-5 reset-col right-end margin-b-15">
+            <div id="box-search">
+                <div class="relative">
+                    <input style="background-color: #d1cfcf;" ng-model="tukhoa" class="input-search relative" type="text" placeholder="Search...">
+                    <button class=" button-search"><i class="fas fa-search"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--04-02. End thanh search -->
+        <!--04-03. Table load  (thay đổi url theo dự án) -->
+        <div ng-controller="checkBoxController" class="col-12 reset-col" ng-include="'content-admin-panel/page-components/all-posts/table-load-all-posts.html'" scope="" onload=""></div>
+        <!--04-03. End table load -->
+
+    </div>
+
+
+
+
+
+    <!--04-04. Khối pagination (thay đổi url theo dự án) -->
+    <div class="row " ng-include="'content-admin-panel/general-ingredients/view-pagination/pagination.html'" scope="" onload=""></div>
+    <!--04-04. End khối pagination -->
+
+
+</div>
+
+<!-- 04.End khối hiển thị dữ liệu -->
